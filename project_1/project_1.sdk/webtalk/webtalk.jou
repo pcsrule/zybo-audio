@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:48:31 MST 2014
+# 
+# Start of session at: Thu Apr  2 11:37:50 2015
+# Process ID: 15628
+# Log file: /home/nolan/Documents/Vivado/project_1/project_1.sdk/webtalk/webtalk.log
+# Journal file: /home/nolan/Documents/Vivado/project_1/project_1.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

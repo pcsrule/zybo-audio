@@ -1,0 +1,1552 @@
+10:41:50 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+10:41:56 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+10:44:17 INFO  : BSP Project P/RTOSDemo_bsp has been successfully migrated.
+11:32:29 INFO  : System reset is completed.
+11:32:31 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:32:31 INFO  : ps7_init is completed.
+11:32:31 INFO  : ps7_post_config is completed.
+11:32:32 INFO  : Memory regions updated for context APU
+11:32:32 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+11:37:50 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:14:42 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+10:14:43 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+10:14:43 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:15:02 INFO  : System reset is completed.
+10:15:03 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:15:04 INFO  : ps7_init is completed.
+10:15:04 INFO  : ps7_post_config is completed.
+10:15:04 INFO  : Memory regions updated for context APU
+10:15:05 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+10:15:52 INFO  : System reset is completed.
+10:15:54 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:15:55 INFO  : ps7_init is completed.
+10:15:55 INFO  : ps7_post_config is completed.
+10:15:55 INFO  : Memory regions updated for context APU
+10:15:55 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+10:19:15 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:05:36 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+11:05:37 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+11:05:37 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:06:41 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+11:06:41 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+11:06:42 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:43:36 INFO  : System reset is completed.
+10:43:37 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:43:38 INFO  : ps7_init is completed.
+10:43:38 INFO  : ps7_post_config is completed.
+10:43:39 INFO  : Memory regions updated for context APU
+10:43:39 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+10:47:47 INFO  : System reset is completed.
+10:47:49 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:47:49 INFO  : ps7_init is completed.
+10:47:49 INFO  : ps7_post_config is completed.
+10:47:50 INFO  : Memory regions updated for context APU
+10:47:50 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+10:49:33 INFO  : System reset is completed.
+10:49:35 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:49:35 INFO  : ps7_init is completed.
+10:49:35 INFO  : ps7_post_config is completed.
+10:49:36 INFO  : Memory regions updated for context APU
+10:49:36 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+10:50:20 INFO  : System reset is completed.
+10:50:21 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:50:22 INFO  : ps7_init is completed.
+10:50:22 INFO  : ps7_post_config is completed.
+10:50:22 INFO  : Memory regions updated for context APU
+10:50:22 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+10:52:14 INFO  : System reset is completed.
+10:52:16 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:52:16 INFO  : ps7_init is completed.
+10:52:16 INFO  : ps7_post_config is completed.
+10:52:17 INFO  : Memory regions updated for context APU
+10:52:17 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+10:53:12 INFO  : System reset is completed.
+10:53:14 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:53:14 INFO  : ps7_init is completed.
+10:53:15 INFO  : ps7_post_config is completed.
+10:53:15 INFO  : Memory regions updated for context APU
+10:53:15 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+11:19:49 INFO  : System reset is completed.
+11:19:51 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:19:51 INFO  : ps7_init is completed.
+11:19:51 INFO  : ps7_post_config is completed.
+11:19:52 INFO  : Memory regions updated for context APU
+11:19:52 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+10:08:27 INFO  : System reset is completed.
+10:08:29 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:08:29 INFO  : ps7_init is completed.
+10:08:29 INFO  : ps7_post_config is completed.
+10:08:30 INFO  : Memory regions updated for context APU
+10:08:30 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+10:32:07 INFO  : System reset is completed.
+10:32:09 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:32:09 INFO  : ps7_init is completed.
+10:32:09 INFO  : ps7_post_config is completed.
+10:32:10 INFO  : Memory regions updated for context APU
+10:32:10 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+11:12:12 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:14:17 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+10:14:18 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+10:14:18 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:19:07 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+10:19:08 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+10:19:08 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:19:27 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+10:19:28 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+10:19:29 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:22:47 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+10:22:48 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+10:22:49 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:25:15 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+10:25:16 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+10:25:17 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:28:22 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+10:28:23 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+10:28:24 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:41:23 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+11:41:23 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+11:41:24 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:41:24 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1429295980000,  Project:1427996404000
+11:41:24 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+11:41:24 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+11:41:24 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:41:25 INFO  : 
+11:41:26 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+11:41:26 INFO  : Clearing existing target manager status.
+11:41:28 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+16:01:21 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:46:13 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+16:46:14 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:46:14 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:15:29 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+17:15:30 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+17:15:30 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:25:13 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+17:25:14 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+17:25:15 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+22:53:46 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+22:53:47 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+22:53:48 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:28:33 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+11:28:35 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+11:28:36 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:28:36 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1429727230000,  Project:1429295980000
+11:28:36 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+11:28:36 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+11:28:37 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:28:48 INFO  : 
+11:28:50 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+11:28:50 INFO  : Clearing existing target manager status.
+11:28:53 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:35:18 INFO  : System reset is completed.
+11:35:20 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:35:21 INFO  : ps7_init is completed.
+11:35:21 INFO  : ps7_post_config is completed.
+11:35:21 INFO  : Memory regions updated for context APU
+11:35:21 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+11:39:10 INFO  : System reset is completed.
+11:39:12 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:39:13 INFO  : ps7_init is completed.
+11:39:13 INFO  : ps7_post_config is completed.
+11:39:13 INFO  : Memory regions updated for context APU
+11:39:13 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+11:43:44 INFO  : System reset is completed.
+11:43:46 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:43:46 INFO  : ps7_init is completed.
+11:43:46 INFO  : ps7_post_config is completed.
+11:43:47 INFO  : Memory regions updated for context APU
+11:43:47 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+11:45:27 INFO  : System reset is completed.
+11:45:28 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:45:29 INFO  : ps7_init is completed.
+11:45:29 INFO  : ps7_post_config is completed.
+11:45:29 INFO  : Memory regions updated for context APU
+11:45:29 INFO  : Application is downloaded for ps7_cortexa9_0. (/home/nolan/Documents/Vivado/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/Debug/RTOSDemo.elf)
+11:49:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:50:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:50:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:51:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:59:41 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1429729162000,  Project:1429727230000
+11:59:41 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:59:48 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+11:59:54 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:00:00 INFO  : 
+12:00:01 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+12:00:01 INFO  : Clearing existing target manager status.
+12:00:01 INFO  : Closing and re-opening the MSS file of ther project RTOSDemo_bsp
+12:00:01 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:00:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:01:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:08:46 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+15:08:47 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:08:47 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:09:04 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+15:09:04 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:10:05 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+15:10:05 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:10:20 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:11:05 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+15:11:05 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:11:06 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:11:17 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:669)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:11:32 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+15:11:32 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:11:50 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Debug Operation Not Supported on the Target, Current Processor State is not "Stopped"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:669)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:12:03 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot flush JTAG buffers
+    Error Address = 0xf8000b50
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:669)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:12:21 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+15:12:21 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:13:32 INFO  : ps7_init is completed.
+15:13:32 INFO  : ps7_post_config is completed.
+15:13:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:14:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:15:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:15:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:15:41 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:15:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:02 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:21:03 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+15:21:03 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+15:27:17 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1429914425000,  Project:1429729162000
+15:27:17 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+15:27:20 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+15:27:25 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:27:31 INFO  : 
+15:27:33 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+15:27:33 INFO  : Clearing existing target manager status.
+15:27:33 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:28:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:07 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:08 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:09 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:09 ERROR : Unexpected exception while reading from serial port: {}
+java.io.IOException: Input/output error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1532)
+	at com.xilinx.sdk.debug.core.internal.comm.SerialStreamMonitor.serialEvent(SerialStreamMonitor.java:36)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+15:28:09 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+15:28:09 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+15:28:34 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+15:28:34 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:28:45 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+15:28:45 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:28:55 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+15:28:55 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:29:10 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:584)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:29:17 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:669)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:29:31 INFO  : ps7_init is completed.
+15:29:31 INFO  : ps7_post_config is completed.
+15:29:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:36:42 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1429914923000,  Project:1429914425000
+15:36:42 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+15:36:56 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+15:37:02 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:37:08 INFO  : 
+15:37:09 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+15:37:09 INFO  : Clearing existing target manager status.
+15:37:09 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:37:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:37:33 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unable to open XMD GDB Server
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:678)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:37:37 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:04:56 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:04:57 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:04:57 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:05:30 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:05:33 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:05:34 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:05:34 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1430723037000,  Project:1429914923000
+00:05:34 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:05:34 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+00:05:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:05:50 INFO  : 
+00:05:52 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+00:05:52 INFO  : Clearing existing target manager status.
+00:05:55 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:06:21 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:06:37 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:06:39 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:06:40 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:08:27 INFO  : Saving BSP preferences.
+00:09:10 INFO  : Saving hardware specification preferences.
+00:09:10 INFO  : Starting the monitor for source hardware specification changes.
+00:09:10 INFO  : Saving repository preferences.
+00:09:10 INFO  : Saving BSP preferences.
+00:09:10 INFO  : Saving flash programming preferences.
+00:09:47 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:669)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:09:53 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:10:16 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:10:17 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:10:17 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:10:27 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:669)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:10:47 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:11:05 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:11:06 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:11:06 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:11:56 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:11:56 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:11:57 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:18:28 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:18:29 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:18:30 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:19:08 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:19:08 ERROR : Unsatisfied link error while loading librdi_repo_manager.so: java.lang.UnsatisfiedLinkError: no rdi_repo_manager in java.library.path
+00:19:08 ERROR : Unsatisfied link error while loading librdi_hw_platform.so: java.lang.UnsatisfiedLinkError: no rdi_hw_platform in java.library.path
+00:19:08 INFO  : Launching XSDB server: xsdb -s /home/nolan/apps/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:19:08 ERROR : Error launching XSDB server
+java.io.IOException: Cannot run program "xsdb": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.xilinx.sdk.targetmanager.XSDBCommandManager.launchXsdbServer(XSDBCommandManager.java:143)
+	at com.xilinx.sdk.targetmanager.XSDBCommandManager.access$1(XSDBCommandManager.java:133)
+	at com.xilinx.sdk.targetmanager.XSDBCommandManager$3.onChannelClosed(XSDBCommandManager.java:117)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:742)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:187)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 9 more
+00:19:09 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:20:53 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:20:53 ERROR : Unsatisfied link error while loading librdi_repo_manager.so: java.lang.UnsatisfiedLinkError: no rdi_repo_manager in java.library.path
+00:20:53 ERROR : Unsatisfied link error while loading librdi_hw_platform.so: java.lang.UnsatisfiedLinkError: no rdi_hw_platform in java.library.path
+00:20:54 INFO  : Launching XSDB server: xsdb -s /home/nolan/apps/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:20:54 ERROR : Error launching XSDB server
+java.io.IOException: Cannot run program "xsdb": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.xilinx.sdk.targetmanager.XSDBCommandManager.launchXsdbServer(XSDBCommandManager.java:143)
+	at com.xilinx.sdk.targetmanager.XSDBCommandManager.access$1(XSDBCommandManager.java:133)
+	at com.xilinx.sdk.targetmanager.XSDBCommandManager$3.onChannelClosed(XSDBCommandManager.java:117)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:742)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:187)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 9 more
+00:20:54 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:21:51 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:21:51 ERROR : Unsatisfied link error while loading librdi_repo_manager.so: java.lang.UnsatisfiedLinkError: no rdi_repo_manager in java.library.path
+00:21:51 ERROR : Unsatisfied link error while loading librdi_hw_platform.so: java.lang.UnsatisfiedLinkError: no rdi_hw_platform in java.library.path
+00:21:51 INFO  : Launching XSDB server: xsdb -s /home/nolan/apps/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:21:51 ERROR : Error launching XSDB server
+java.io.IOException: Cannot run program "xsdb": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.xilinx.sdk.targetmanager.XSDBCommandManager.launchXsdbServer(XSDBCommandManager.java:143)
+	at com.xilinx.sdk.targetmanager.XSDBCommandManager.access$1(XSDBCommandManager.java:133)
+	at com.xilinx.sdk.targetmanager.XSDBCommandManager$3.onChannelClosed(XSDBCommandManager.java:117)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:742)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:187)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 9 more
+00:21:51 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:22:23 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:22:24 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:22:24 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:23:30 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:669)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:23:47 INFO  : ps7_init is completed.
+00:23:47 INFO  : ps7_post_config is completed.
+00:23:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:26:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1430724383000,  Project:1430723037000
+00:26:50 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:26:56 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+00:27:01 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:27:07 INFO  : 
+00:27:09 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+00:27:09 INFO  : Clearing existing target manager status.
+00:27:09 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:27:38 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:33:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1430724663000,  Project:1430724383000
+00:33:02 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:33:05 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+00:33:10 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:33:16 INFO  : 
+00:33:18 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+00:33:18 INFO  : Clearing existing target manager status.
+00:33:18 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:33:33 INFO  : System reset is completed.
+00:33:35 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:33:35 INFO  : ps7_init is completed.
+00:33:35 INFO  : ps7_post_config is completed.
+00:34:49 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:34:50 INFO  : System reset is completed.
+00:34:52 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:34:52 INFO  : ps7_init is completed.
+00:34:53 INFO  : ps7_post_config is completed.
+00:44:28 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

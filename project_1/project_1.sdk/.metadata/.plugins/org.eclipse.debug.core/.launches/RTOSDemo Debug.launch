@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xilinx.sdk.tcf.debug.LaunchConfigurationType">
+<stringAttribute key="com.xilinx.sdk.gdb.launch.DataFiles" value=""/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uiapplication.path" value=""/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uidebug.type" value="STANDALONE_DEBUG"/>
+<booleanAttribute key="com.xilinx.sdk.tcf.debug.uienable.crosstrigger" value="false"/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uihw.bit.file" value="design_1_wrapper.bit"/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uihw.init.tcl" value="ps7_init.tcl"/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uihw_platform.name" value="design_1_wrapper_hw_platform_0"/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uilinux.host" value=""/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uilinux.port" value="1534"/>
+<booleanAttribute key="com.xilinx.sdk.tcf.debug.uimonitor" value="false"/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uiproc.appl.map" value="{&quot;ps7_cortexa9_0&quot;:{&quot;xilinx.tcf.application&quot;:&quot;Debug/RTOSDemo.elf&quot;,&quot;xilinx.tcf.datafiles&quot;:&quot;&quot;,&quot;xilinx.tcf.no_download&quot;:false,&quot;xilinx.tcf.project&quot;:&quot;RTOSDemo&quot;,&quot;xilinx.tcf.reset&quot;:true,&quot;xilinx.tcf.stop_at_entry&quot;:true}}"/>
+<booleanAttribute key="com.xilinx.sdk.tcf.debug.uiprogram.fpga" value="true"/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uiproject.name" value="RTOSDemo"/>
+<booleanAttribute key="com.xilinx.sdk.tcf.debug.uips7.init" value="true"/>
+<booleanAttribute key="com.xilinx.sdk.tcf.debug.uips7.post" value="true"/>
+<booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.system" value="true"/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uitarget.peer" value="Local"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/RTOSDemo"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+</launchConfiguration>

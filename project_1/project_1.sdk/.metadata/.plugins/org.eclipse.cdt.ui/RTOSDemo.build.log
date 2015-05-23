@@ -1,0 +1,6 @@
+00:34:48 **** Incremental Build of configuration Debug for project RTOSDemo ****
+make all 
+make: Nothing to be done for 'all'.
+
+00:34:49 Build Finished (took 111ms)
+

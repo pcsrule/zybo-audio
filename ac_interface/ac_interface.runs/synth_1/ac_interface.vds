@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri May 15 00:55:40 2015
+# Process ID: 8649
+# Log file: /home/nolan/Documents/Vivado/ac_interface/ac_interface.runs/synth_1/ac_interface.vds
+# Journal file: /home/nolan/Documents/Vivado/ac_interface/ac_interface.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ac_interface.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z010clg400-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at /home/nolan/Apps/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at /home/nolan/Apps/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at /home/nolan/Apps/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at /home/nolan/Apps/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at /home/nolan/Apps/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at /home/nolan/Apps/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/nolan/Documents/Vivado/ac_interface/ac_interface.cache/wt [current_project]
+# set_property parent.project_path /home/nolan/Documents/Vivado/ac_interface/ac_interface.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths /home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new [current_project]
+# read_verilog -library xil_defaultlib -sv /home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv
+# catch { write_hwdef -file ac_interface.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top ac_interface -part xc7z010clg400-1
+Command: synth_design -top ac_interface -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 950.711 ; gain = 135.727 ; free physical = 967 ; free virtual = 3875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ac_interface' [/home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:23]
+WARNING: [Synth 8-3848] Net AC_PBLRC in module/entity ac_interface does not have driver. [/home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:27]
+WARNING: [Synth 8-3848] Net AC_RECLRC in module/entity ac_interface does not have driver. [/home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:29]
+WARNING: [Synth 8-3848] Net AC_SCLK in module/entity ac_interface does not have driver. [/home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:31]
+INFO: [Synth 8-256] done synthesizing module 'ac_interface' (1#1) [/home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:23]
+WARNING: [Synth 8-3330] design ac_interface has an empty top module
+WARNING: [Synth 8-3331] design ac_interface has unconnected port AC_PBLRC
+WARNING: [Synth 8-3331] design ac_interface has unconnected port AC_RECLRC
+WARNING: [Synth 8-3331] design ac_interface has unconnected port AC_SCLK
+WARNING: [Synth 8-3917] design ac_interface has port AC_MUTEN driven by constant 1
+WARNING: [Synth 8-3331] design ac_interface has unconnected port AC_SDIN
+WARNING: [Synth 8-3331] design ac_interface has unconnected port sysclk
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 986.953 ; gain = 171.969 ; free physical = 930 ; free virtual = 3838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 986.953 ; gain = 171.969 ; free physical = 930 ; free virtual = 3838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 994.953 ; gain = 179.969 ; free physical = 930 ; free virtual = 3838
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net AC_PBLRC in module/entity ac_interface does not have driver. [/home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:27]
+WARNING: [Synth 8-3848] Net AC_RECLRC in module/entity ac_interface does not have driver. [/home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:29]
+WARNING: [Synth 8-3848] Net AC_SCLK in module/entity ac_interface does not have driver. [/home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:31]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1002.957 ; gain = 187.973 ; free physical = 922 ; free virtual = 3830
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ac_interface 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Loading clock regions from /home/nolan/Apps/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z010/ClockRegion.xml
+Loading clock buffers from /home/nolan/Apps/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z010/ClockBuffers.xml
+Loading clock placement rules from /home/nolan/Apps/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /home/nolan/Apps/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /home/nolan/Apps/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z010/clg400/Package.xml
+Loading io standards from /home/nolan/Apps/Xilinx/Vivado/2014.4/data/./parts/xilinx/zynq/IOStandards.xml
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.277 ; gain = 275.293 ; free physical = 843 ; free virtual = 3751
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3330] design ac_interface has an empty top module
+WARNING: [Synth 8-3331] design ac_interface has unconnected port AC_PBLRC
+WARNING: [Synth 8-3331] design ac_interface has unconnected port AC_RECLRC
+WARNING: [Synth 8-3331] design ac_interface has unconnected port AC_SCLK
+WARNING: [Synth 8-3917] design ac_interface has port AC_MUTEN driven by constant 1
+WARNING: [Synth 8-3331] design ac_interface has unconnected port AC_SDIN
+WARNING: [Synth 8-3331] design ac_interface has unconnected port sysclk
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.277 ; gain = 275.293 ; free physical = 843 ; free virtual = 3751
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.277 ; gain = 275.293 ; free physical = 843 ; free virtual = 3751
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.277 ; gain = 275.293 ; free physical = 843 ; free virtual = 3751
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.277 ; gain = 275.293 ; free physical = 843 ; free virtual = 3751
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.277 ; gain = 275.293 ; free physical = 843 ; free virtual = 3751
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.277 ; gain = 275.293 ; free physical = 843 ; free virtual = 3751
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.277 ; gain = 275.293 ; free physical = 843 ; free virtual = 3751
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.285 ; gain = 283.301 ; free physical = 834 ; free virtual = 3742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.285 ; gain = 283.301 ; free physical = 834 ; free virtual = 3742
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.285 ; gain = 283.301 ; free physical = 834 ; free virtual = 3742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.285 ; gain = 283.301 ; free physical = 834 ; free virtual = 3742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |IBUF  |     2|
+|2     |OBUF  |     4|
+|3     |OBUFT |     3|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     9|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.285 ; gain = 283.301 ; free physical = 834 ; free virtual = 3742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1098.285 ; gain = 198.562 ; free physical = 834 ; free virtual = 3742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.285 ; gain = 283.301 ; free physical = 834 ; free virtual = 3742
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1164.297 ; gain = 265.582 ; free physical = 762 ; free virtual = 3670
+# write_checkpoint -noxdef ac_interface.dcp
+# catch { report_utilization -file ac_interface_utilization_synth.rpt -pb ac_interface_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1180.297 ; gain = 0.000 ; free physical = 759 ; free virtual = 3667
+INFO: [Common 17-206] Exiting Vivado at Fri May 15 00:55:51 2015...

@@ -1,0 +1,50 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Fri May 15 00:57:33 2015
+| Host         : nolan-desktop running 64-bit Fedora release 21 (Twenty One)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ac_interface_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_ac_interface_0_1 (Nolan:user:ac_interface:1.1) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'design_1_ac_interface_0_1'. These changes may impact your design.
+
+
+-upgrade has removed port 'play_l'
+-upgrade has removed port 'play_r'
+-upgrade has removed port 'rec_l'
+-upgrade has removed port 'rec_r'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Fri May 15 00:56:28 2015
+| Host         : nolan-desktop running 64-bit Fedora release 21 (Twenty One)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ac_interface_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ac_interface_0_1 from Nolan:user:ac_interface:1.0 (Rev. 3) to Nolan:user:ac_interface:1.1 (Rev. 4)
+
