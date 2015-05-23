@@ -42,8 +42,10 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set rc [catch {
@@ -54,6 +56,7 @@ set rc [catch {
   set_property parent.project_path /home/nolan/Documents/Vivado/project_1/project_1.xpr [current_project]
   set_property ip_repo_paths {
   /home/nolan/Documents/Vivado/project_1/project_1.cache/ip
+  /home/nolan/Documents/Vivado/i2c_interface
   /home/nolan/Documents/Vivado/ac_interface
 } [current_project]
   set_property ip_output_repo /home/nolan/Documents/Vivado/project_1/project_1.cache/ip [current_project]

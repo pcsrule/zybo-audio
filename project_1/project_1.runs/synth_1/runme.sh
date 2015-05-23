@@ -7,16 +7,16 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/home/nolan/Apps/xilinx/SDK/2015.1/bin:/home/nolan/Apps/xilinx/Vivado/2015.1/ids_lite/ISE/bin/lin64:/home/nolan/Apps/xilinx/Vivado/2015.1/bin
+  PATH=/home/nolan/apps/xilinx/SDK/2015.1/bin:/home/nolan/apps/xilinx/Vivado/2015.1/ids_lite/ISE/bin/lin64:/home/nolan/apps/xilinx/Vivado/2015.1/bin
 else
-  PATH=/home/nolan/Apps/xilinx/SDK/2015.1/bin:/home/nolan/Apps/xilinx/Vivado/2015.1/ids_lite/ISE/bin/lin64:/home/nolan/Apps/xilinx/Vivado/2015.1/bin:$PATH
+  PATH=/home/nolan/apps/xilinx/SDK/2015.1/bin:/home/nolan/apps/xilinx/Vivado/2015.1/ids_lite/ISE/bin/lin64:/home/nolan/apps/xilinx/Vivado/2015.1/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/home/nolan/Apps/xilinx/Vivado/2015.1/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/home/nolan/apps/xilinx/Vivado/2015.1/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/home/nolan/Apps/xilinx/Vivado/2015.1/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/home/nolan/apps/xilinx/Vivado/2015.1/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 

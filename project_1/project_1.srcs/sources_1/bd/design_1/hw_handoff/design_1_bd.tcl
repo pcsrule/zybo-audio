@@ -156,7 +156,7 @@ proc create_root_design { parentCell } {
   set AC_RECDAT [ create_bd_port -dir I AC_RECDAT ]
   set AC_RECLRC [ create_bd_port -dir O AC_RECLRC ]
   set ac_scl [ create_bd_port -dir O ac_scl ]
-  set ac_sda [ create_bd_port -dir IO ac_sda ]
+  set ac_sda [ create_bd_port -dir O ac_sda ]
 
   # Create instance: ac_interface_0, and set properties
   set ac_interface_0 [ create_bd_cell -type ip -vlnv Nolan:user:ac_interface:1.1 ac_interface_0 ]
@@ -164,6 +164,9 @@ proc create_root_design { parentCell } {
   # Create instance: axi_gpio_0, and set properties
   set axi_gpio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 ]
   set_property -dict [ list CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_GPIO_WIDTH {4}  ] $axi_gpio_0
+
+  # Create instance: i2c_master_0, and set properties
+  set i2c_master_0 [ create_bd_cell -type ip -vlnv user.org:user:i2c_master:1.0 i2c_master_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
@@ -185,15 +188,15 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net AC_RECDAT_1 [get_bd_ports AC_RECDAT] [get_bd_pins ac_interface_0/AC_RECDAT]
-  connect_bd_net -net Net [get_bd_ports ac_sda] [get_bd_pins ac_interface_0/AC_SDIN]
   connect_bd_net -net ac_interface_0_AC_BCLK [get_bd_ports AC_BCLK] [get_bd_pins ac_interface_0/AC_BCLK]
   connect_bd_net -net ac_interface_0_AC_MCLK [get_bd_ports AC_MCLK] [get_bd_pins ac_interface_0/AC_MCLK]
   connect_bd_net -net ac_interface_0_AC_MUTEN [get_bd_ports AC_MUTEN] [get_bd_pins ac_interface_0/AC_MUTEN]
   connect_bd_net -net ac_interface_0_AC_PBDAT [get_bd_ports AC_PBDAT] [get_bd_pins ac_interface_0/AC_PBDAT]
   connect_bd_net -net ac_interface_0_AC_PBLRC [get_bd_ports AC_PBLRC] [get_bd_pins ac_interface_0/AC_PBLRC]
   connect_bd_net -net ac_interface_0_AC_RECLRC [get_bd_ports AC_RECLRC] [get_bd_pins ac_interface_0/AC_RECLRC]
-  connect_bd_net -net ac_interface_0_AC_SCLK [get_bd_ports ac_scl] [get_bd_pins ac_interface_0/AC_SCLK]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins ac_interface_0/sysclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0_axi_periph/ACLK] [get_bd_pins processing_system7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK] [get_bd_pins rst_processing_system7_0_100M/slowest_sync_clk]
+  connect_bd_net -net i2c_master_0_i2c_scl [get_bd_ports ac_scl] [get_bd_pins i2c_master_0/i2c_scl]
+  connect_bd_net -net i2c_master_0_i2c_sda [get_bd_ports ac_sda] [get_bd_pins i2c_master_0/i2c_sda]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins ac_interface_0/sysclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins i2c_master_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0_axi_periph/ACLK] [get_bd_pins processing_system7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK] [get_bd_pins rst_processing_system7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_CLK2 [get_bd_pins ac_interface_0/mclk] [get_bd_pins processing_system7_0/FCLK_CLK2]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_processing_system7_0_100M/ext_reset_in]
   connect_bd_net -net rst_processing_system7_0_100M_interconnect_aresetn [get_bd_pins processing_system7_0_axi_periph/ARESETN] [get_bd_pins rst_processing_system7_0_100M/interconnect_aresetn]

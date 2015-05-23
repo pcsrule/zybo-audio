@@ -1,8 +1,8 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Fri May 22 01:29:53 2015
-//Host        : nolan-desktop running 64-bit Fedora release 21 (Twenty One)
+//Date        : Sat May 23 03:18:50 2015
+//Host        : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -70,7 +70,7 @@ module design_1_wrapper
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   output ac_scl;
-  inout ac_sda;
+  output ac_sda;
   output [3:0]led_tri_o;
 
   wire AC_BCLK;

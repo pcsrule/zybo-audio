@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nolan/Documents/Vivado/i2c_interface/i2c.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nolan/Documents/Vivado/i2c_interface/i2c_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nolan/Documents/Vivado/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
