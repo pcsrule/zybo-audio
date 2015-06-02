@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2014.4 (64-bit)              -->
+<!-- Product Version: Vivado v2015.1 (64-bit)              -->
 <!--                                                         -->
-<!-- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.   -->
+<!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="2" Path="/home/nolan/Documents/Vivado/ac_interface/ac_interface.xpr">
+<Project Version="7" Minor="5" Path="/home/nolan/Documents/Vivado/ac_interface/ac_interface.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e5aab51952314ae596a84033ab5610cb"/>
@@ -13,6 +13,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="IPRepoPath" Val="$PSRCDIR/sources_1/new"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="EnableCoreContainerForIPI" Val="FALSE"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
@@ -30,7 +32,6 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="ac_interface"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -56,13 +57,19 @@
       <Option Name="CompiledLib" Val="0"/>
     </Simulator>
     <Simulator Name="ModelSim">
-      <Option Name="Description" Val="QuestaSim/ModelSim Simulator"/>
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
     </Simulator>
     <Simulator Name="IES">
       <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
     </Simulator>
     <Simulator Name="VCS">
       <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="9">

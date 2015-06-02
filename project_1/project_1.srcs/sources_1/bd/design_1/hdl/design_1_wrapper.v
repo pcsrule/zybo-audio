@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Sat May 23 03:18:50 2015
+//Date        : Mon Jun  1 16:23:15 2015
 //Host        : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -38,8 +38,8 @@ module design_1_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    ac_scl,
-    ac_sda,
+    iic_0_scl_io,
+    iic_0_sda_io,
     led_tri_o);
   output AC_BCLK;
   output AC_MCLK;
@@ -69,8 +69,8 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output ac_scl;
-  output ac_sda;
+  inout iic_0_scl_io;
+  inout iic_0_sda_io;
   output [3:0]led_tri_o;
 
   wire AC_BCLK;
@@ -101,8 +101,14 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire ac_scl;
-  wire ac_sda;
+  wire iic_0_scl_i;
+  wire iic_0_scl_io;
+  wire iic_0_scl_o;
+  wire iic_0_scl_t;
+  wire iic_0_sda_i;
+  wire iic_0_sda_io;
+  wire iic_0_sda_o;
+  wire iic_0_sda_t;
   wire [3:0]led_tri_o;
 
   design_1 design_1_i
@@ -134,7 +140,21 @@ module design_1_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .LED_tri_o(led_tri_o),
-        .ac_scl(ac_scl),
-        .ac_sda(ac_sda));
+        .IIC_0_scl_i(iic_0_scl_i),
+        .IIC_0_scl_o(iic_0_scl_o),
+        .IIC_0_scl_t(iic_0_scl_t),
+        .IIC_0_sda_i(iic_0_sda_i),
+        .IIC_0_sda_o(iic_0_sda_o),
+        .IIC_0_sda_t(iic_0_sda_t),
+        .LED_tri_o(led_tri_o));
+  IOBUF iic_0_scl_iobuf
+       (.I(iic_0_scl_o),
+        .IO(iic_0_scl_io),
+        .O(iic_0_scl_i),
+        .T(iic_0_scl_t));
+  IOBUF iic_0_sda_iobuf
+       (.I(iic_0_sda_o),
+        .IO(iic_0_sda_io),
+        .O(iic_0_sda_i),
+        .T(iic_0_sda_t));
 endmodule

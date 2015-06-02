@@ -1,44 +1,39 @@
 {
    guistr: "# # String gsaved with Nlview 6.4.12  2014-12-16 bk=1.3272 VDI=35 GEI=35 GUI=JA:1.8
 #  -string -flagsOSRD
-preplace port AC_RECLRC -pg 1 -y 270 -defaultsOSRD
-preplace port DDR -pg 1 -y 440 -defaultsOSRD
-preplace port AC_MCLK -pg 1 -y 350 -defaultsOSRD
-preplace port AC_MUTEN -pg 1 -y 330 -defaultsOSRD
+preplace port AC_RECLRC -pg 1 -y 220 -defaultsOSRD
+preplace port DDR -pg 1 -y 400 -defaultsOSRD
+preplace port AC_MCLK -pg 1 -y 300 -defaultsOSRD
+preplace port AC_MUTEN -pg 1 -y 280 -defaultsOSRD
 preplace port AC_RECDAT -pg 1 -y 140 -defaultsOSRD -right
-preplace port AC_PBLRC -pg 1 -y 250 -defaultsOSRD
-preplace port LED -pg 1 -y 70 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y 460 -defaultsOSRD
-preplace port ac_sda -pg 1 -y 550 -defaultsOSRD
-preplace port ac_scl -pg 1 -y 580 -defaultsOSRD
-preplace port AC_BCLK -pg 1 -y 210 -defaultsOSRD
-preplace port AC_PBDAT -pg 1 -y 230 -defaultsOSRD
-preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 290 -defaultsOSRD
-preplace inst ac_interface_0 -pg 1 -lvl 3 -y 300 -defaultsOSRD
+preplace port AC_PBLRC -pg 1 -y 200 -defaultsOSRD
+preplace port IIC_0 -pg 1 -y 510 -defaultsOSRD
+preplace port LED -pg 1 -y 20 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 420 -defaultsOSRD
+preplace port AC_BCLK -pg 1 -y 160 -defaultsOSRD
+preplace port AC_PBDAT -pg 1 -y 180 -defaultsOSRD
+preplace inst ac_interface_0 -pg 1 -lvl 3 -y 250 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 230 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 3 -y 70 -defaultsOSRD
-preplace inst i2c_master_0 -pg 1 -lvl 3 -y 570 -defaultsOSRD
-preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 290 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -y 530 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 1 3 N 440 NJ 440 NJ
-preplace netloc ac_interface_0_AC_MCLK 1 3 1 1200
-preplace netloc ac_interface_0_AC_RECLRC 1 3 1 1200
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 390 430
-preplace netloc i2c_master_0_i2c_sda 1 3 1 1180
-preplace netloc i2c_master_0_i2c_scl 1 3 1 N
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 450 90 NJ
-preplace netloc AC_RECDAT_1 1 2 2 830 140 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 1 3 N 460 NJ 460 NJ
-preplace netloc ac_interface_0_AC_PBDAT 1 3 1 1180
-preplace netloc axi_gpio_0_GPIO 1 3 1 N
-preplace netloc ac_interface_0_AC_PBLRC 1 3 1 1190
-preplace netloc ac_interface_0_AC_BCLK 1 3 1 1170
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 460
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 380 470 560 820
-preplace netloc ac_interface_0_AC_MUTEN 1 3 1 1180
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 240 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 500 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 3 N 400 NJ 400 NJ
+preplace netloc ac_interface_0_AC_RECLRC 1 3 1 1250
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 450
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 350 430
+preplace netloc processing_system7_0_IIC_0 1 1 3 460 510 NJ 510 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 480 390 830
+preplace netloc AC_RECDAT_1 1 2 2 840 140 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 N 420 NJ 420 NJ
+preplace netloc ac_interface_0_AC_PBDAT 1 3 1 1240
+preplace netloc axi_gpio_0_GPIO 1 3 1 1230
+preplace netloc ac_interface_0_AC_BCLK 1 3 1 1230
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 470
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 340 440 100 820
+preplace netloc ac_interface_0_AC_MUTEN 1 3 1 1240
 preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 810
-preplace netloc processing_system7_0_FCLK_CLK2 1 1 2 NJ 600 830
-levelinfo -pg 1 0 230 660 1060 1220
+preplace netloc processing_system7_0_FCLK_CLK2 1 1 3 470 380 840 340 NJ
+levelinfo -pg 1 0 230 660 1120 1270
 ",
 }
 {

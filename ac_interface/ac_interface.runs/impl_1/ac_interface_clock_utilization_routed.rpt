@@ -1,12 +1,14 @@
-Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Fri May 15 00:56:07 2015
-| Host         : nolan-desktop running 64-bit Fedora release 21 (Twenty One)
-| Command      : report_clock_utilization -file ac_interface_clock_utilization_placed.rpt
-| Design       : ac_interface
-| Device       : xc7z010
-------------------------------------------------------------------------------------------
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date              : Mon Jun  1 15:57:44 2015
+| Host              : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
+| Command           : report_clock_utilization -file ac_interface_clock_utilization_routed.rpt
+| Design            : ac_interface
+| Device            : 7z010-clg400
+| Speed File        : -1  PRODUCTION 1.11 2014-09-11
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------------
 
 Clock Utilization Report
 
@@ -51,6 +53,16 @@ Table of Contents
 6. Details of Local Clocks
 --------------------------
 
++-------+-----------------------+---------------------------+--------------+-------+
+|       |                       |                           |   Num Loads  |       |
++-------+-----------------------+---------------------------+------+-------+-------+
+| Index | Local Clk Src         | Net Name                  | BELs | Sites | Fixed |
++-------+-----------------------+---------------------------+------+-------+-------+
+|     1 | bclkDivCounter[0]_i_2 | bclkDivCounter[0]_i_2_n_0 |    2 |     1 |    no |
+|     2 | AC_BCLK_reg           | AC_BCLK_OBUF              |    8 |     4 |    no |
++-------+-----------------------+---------------------------+------+-------+-------+
+
+
 7. Clock Regions : Key Resource Utilization
 -------------------------------------------
 
@@ -60,11 +72,11 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  8800 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  8800 |    0 |  1400 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    8 |  8800 |    0 |  1400 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y1              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  8800 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  8800 |    0 |  1400 |    0 |    40 |    0 |    20 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-* RAMB36 site can be used as two RAMB18/FIFO18 sites
+* RAMB36 site can be used as two RAMB18/FIFO18 sites.
 
 
 
@@ -83,5 +95,20 @@ Table of Contents
 # Location of PLL Clock Primitives
 
 # Location of IO Primitives which is load of clock spine
+set_property LOC IOB_X0Y0 [get_cells AC_BCLK_OBUF_inst]
 
 # Location of clock ports
+
+# Clock net "AC_BCLK_OBUF" driven by instance "AC_BCLK_reg" located at site "SLICE_X42Y2"
+#startgroup
+create_pblock {CLKAG_AC_BCLK_OBUF}
+add_cells_to_pblock [get_pblocks  {CLKAG_AC_BCLK_OBUF}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=AC_BCLK_OBUF_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AC_BCLK_OBUF"}]]]
+resize_pblock [get_pblocks {CLKAG_AC_BCLK_OBUF}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "bclkDivCounter[0]_i_2_n_0" driven by instance "bclkDivCounter[0]_i_2" located at site "SLICE_X43Y5"
+#startgroup
+create_pblock {CLKAG_bclkDivCounter[0]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_bclkDivCounter[0]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="bclkDivCounter[0]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_bclkDivCounter[0]_i_2_n_0}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup

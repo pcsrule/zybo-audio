@@ -31,6 +31,12 @@
         <spirit:busType spirit:library="interface" spirit:name="gpio" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:abstractionType spirit:library="interface" spirit:name="gpio_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
       </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>IIC_0</spirit:name>
+        <spirit:master/>
+        <spirit:busType spirit:library="interface" spirit:name="iic" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="iic_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+      </spirit:busInterface>
     </spirit:busInterfaces>
     <spirit:model>
       <spirit:views>
@@ -66,18 +72,6 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>ac_scl</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>AC_MUTEN</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
           <spirit:name>AC_MCLK</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
@@ -90,7 +84,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>ac_sda</spirit:name>
+          <spirit:name>AC_MUTEN</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -106,22 +100,6 @@
     <spirit:version>1.00.a</spirit:version>
     <spirit:componentInstances>
       <spirit:componentInstance>
-        <spirit:instanceName>ac_interface_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="ac_interface" spirit:vendor="Nolan" spirit:version="1.1"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ac_interface_0_1</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>axi_gpio_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="axi_gpio" spirit:vendor="xilinx.com" spirit:version="2.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_gpio_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_GPIO_WIDTH">4</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_ALL_OUTPUTS">1</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>processing_system7_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="processing_system7" spirit:vendor="xilinx.com" spirit:version="5.5"/>
         <spirit:configurableElementValues>
@@ -130,13 +108,16 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_CLK0_PORT">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_CLK2_PORT">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_IMPORT_BOARD_PRESET">/home/nolan/Downloads/ZYBO_zynq_def.xml</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_QSPI_GRP_SINGLE_SS_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_SD0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PCW_UART1_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UART0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UART1_PERIPHERAL_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_WDT_PERIPHERAL_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_TTC0_PERIPHERAL_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_USB0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_PERIPHERAL_ENABLE">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_I2C0_IO">EMIO</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_GPIO_MIO_GPIO_ENABLE">1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -157,10 +138,19 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>i2c_master_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="i2c_master" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:instanceName>ac_interface_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="ac_interface" spirit:vendor="Nolan" spirit:version="1.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_i2c_master_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ac_interface_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_gpio_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_gpio" spirit:vendor="xilinx.com" spirit:version="2.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_gpio_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_GPIO_WIDTH">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ALL_OUTPUTS">1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -180,15 +170,13 @@
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_CLK0</spirit:name>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK0"/>
-        <spirit:internalPortReference spirit:componentRef="ac_interface_0" spirit:portRef="sysclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="M_AXI_GP0_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="rst_processing_system7_0_100M" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M01_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="i2c_master_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
@@ -198,10 +186,11 @@
       <spirit:adHocConnection>
         <spirit:name>rst_processing_system7_0_100M_peripheral_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="rst_processing_system7_0_100M" spirit:portRef="peripheral_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M01_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="ac_interface_0" spirit:portRef="reset"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>rst_processing_system7_0_100M_interconnect_aresetn</spirit:name>
@@ -219,19 +208,10 @@
         <spirit:externalPortReference spirit:portRef="AC_PBDAT"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>ac_interface_0_AC_PBLRC</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="ac_interface_0" spirit:portRef="AC_PBLRC"/>
-        <spirit:externalPortReference spirit:portRef="AC_PBLRC"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>ac_interface_0_AC_RECLRC</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="ac_interface_0" spirit:portRef="AC_RECLRC"/>
+        <spirit:internalPortReference spirit:componentRef="ac_interface_0" spirit:portRef="AC_LRCLK"/>
         <spirit:externalPortReference spirit:portRef="AC_RECLRC"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>ac_interface_0_AC_MCLK</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="ac_interface_0" spirit:portRef="AC_MCLK"/>
-        <spirit:externalPortReference spirit:portRef="AC_MCLK"/>
+        <spirit:externalPortReference spirit:portRef="AC_PBLRC"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>AC_RECDAT_1</spirit:name>
@@ -241,17 +221,8 @@
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_CLK2</spirit:name>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK2"/>
+        <spirit:externalPortReference spirit:portRef="AC_MCLK"/>
         <spirit:internalPortReference spirit:componentRef="ac_interface_0" spirit:portRef="mclk"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>i2c_master_0_i2c_scl</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="i2c_master_0" spirit:portRef="i2c_scl"/>
-        <spirit:externalPortReference spirit:portRef="ac_scl"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>i2c_master_0_i2c_sda</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="i2c_master_0" spirit:portRef="i2c_sda"/>
-        <spirit:externalPortReference spirit:portRef="ac_sda"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ac_interface_0_AC_MUTEN</spirit:name>
@@ -268,6 +239,9 @@
       </spirit:hierConnection>
       <spirit:hierConnection spirit:interfaceRef="LED/axi_gpio_0_GPIO">
         <spirit:activeInterface spirit:busRef="GPIO" spirit:componentRef="axi_gpio_0"/>
+      </spirit:hierConnection>
+      <spirit:hierConnection spirit:interfaceRef="IIC_0/processing_system7_0_IIC_0">
+        <spirit:activeInterface spirit:busRef="IIC_0" spirit:componentRef="processing_system7_0"/>
       </spirit:hierConnection>
     </spirit:hierConnections>
   </spirit:design>

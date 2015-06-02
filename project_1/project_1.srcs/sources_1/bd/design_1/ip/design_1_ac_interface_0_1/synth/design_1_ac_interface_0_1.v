@@ -48,48 +48,39 @@
 
 
 // IP VLNV: Nolan:user:ac_interface:1.1
-// IP Revision: 5
+// IP Revision: 9
 
 (* X_CORE_INFO = "ac_interface,Vivado 2015.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_ac_interface_0_1,ac_interface,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_ac_interface_0_1 (
   AC_BCLK,
+  AC_LRCLK,
+  frame_sync,
   AC_PBDAT,
-  AC_PBLRC,
   AC_RECDAT,
-  AC_RECLRC,
-  AC_SDIN,
-  AC_SCLK,
   AC_MUTEN,
-  AC_MCLK,
-  sysclk,
-  mclk
+  mclk,
+  reset
 );
 
 output wire AC_BCLK;
+output wire AC_LRCLK;
+output wire frame_sync;
 output wire AC_PBDAT;
-output wire AC_PBLRC;
 input wire AC_RECDAT;
-output wire AC_RECLRC;
-inout wire AC_SDIN;
-output wire AC_SCLK;
 output wire AC_MUTEN;
-output wire AC_MCLK;
-input wire sysclk;
 input wire mclk;
+input wire reset;
 
   ac_interface inst (
     .AC_BCLK(AC_BCLK),
+    .AC_LRCLK(AC_LRCLK),
+    .frame_sync(frame_sync),
     .AC_PBDAT(AC_PBDAT),
-    .AC_PBLRC(AC_PBLRC),
     .AC_RECDAT(AC_RECDAT),
-    .AC_RECLRC(AC_RECLRC),
-    .AC_SDIN(AC_SDIN),
-    .AC_SCLK(AC_SCLK),
     .AC_MUTEN(AC_MUTEN),
-    .AC_MCLK(AC_MCLK),
-    .sysclk(sysclk),
-    .mclk(mclk)
+    .mclk(mclk),
+    .reset(reset)
   );
 endmodule

@@ -1,3 +1,123 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date         : Mon Jun  1 16:06:15 2015
+| Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ac_interface_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_ac_interface_0_1 (Nolan:user:ac_interface:1.1) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'design_1_ac_interface_0_1'. These changes may impact your design.
+
+
+-upgrade has removed port 'sysclk'
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date         : Mon Jun  1 15:39:58 2015
+| Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ac_interface_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_ac_interface_0_1 (Nolan:user:ac_interface:1.1) from (Rev. 7) to (Rev. 8)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'design_1_ac_interface_0_1'. These changes may impact your design.
+
+
+-upgrade has removed port 'AC_MCLK'
+-upgrade has removed port 'AC_PBLRC'
+-upgrade has removed port 'AC_RECLRC'
+-upgrade has added port 'AC_LRCLK'
+-upgrade has added port 'frame_sync'
+-upgrade has added port 'reset'
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date         : Sun May 31 19:39:48 2015
+| Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ac_interface_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_ac_interface_0_1 (Nolan:user:ac_interface:1.1) from (Rev. 6) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'design_1_ac_interface_0_1'. These changes may impact your design.
+
+
+-upgrade has removed port 'AC_SCLK'
+-upgrade has removed port 'AC_SDIN'
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date         : Sun May 31 19:37:28 2015
+| Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ac_interface_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ac_interface_0_1 (Nolan:user:ac_interface:1.1) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014

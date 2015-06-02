@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Sat May 23 03:18:50 2015
+//Date        : Mon Jun  1 16:23:15 2015
 //Host        : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=8,numNonXlnxBlks=2,numHierBlks=4,maxHierDepth=0,da_axi4_cnt=6,da_board_cnt=2,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=7,numNonXlnxBlks=1,numHierBlks=4,maxHierDepth=0,da_axi4_cnt=6,da_board_cnt=2,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (AC_BCLK,
     AC_MCLK,
@@ -39,9 +39,13 @@ module design_1
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    LED_tri_o,
-    ac_scl,
-    ac_sda);
+    IIC_0_scl_i,
+    IIC_0_scl_o,
+    IIC_0_scl_t,
+    IIC_0_sda_i,
+    IIC_0_sda_o,
+    IIC_0_sda_t,
+    LED_tri_o);
   output AC_BCLK;
   output AC_MCLK;
   output AC_MUTEN;
@@ -70,22 +74,22 @@ module design_1
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  input IIC_0_scl_i;
+  output IIC_0_scl_o;
+  output IIC_0_scl_t;
+  input IIC_0_sda_i;
+  output IIC_0_sda_o;
+  output IIC_0_sda_t;
   output [3:0]LED_tri_o;
-  output ac_scl;
-  output ac_sda;
 
   wire AC_RECDAT_1;
   wire GND_1;
   wire VCC_1;
   wire ac_interface_0_AC_BCLK;
-  wire ac_interface_0_AC_MCLK;
   wire ac_interface_0_AC_MUTEN;
   wire ac_interface_0_AC_PBDAT;
-  wire ac_interface_0_AC_PBLRC;
   wire ac_interface_0_AC_RECLRC;
   wire [3:0]axi_gpio_0_GPIO_TRI_O;
-  wire i2c_master_0_i2c_scl;
-  wire i2c_master_0_i2c_sda;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -110,6 +114,12 @@ module design_1
   wire processing_system7_0_FIXED_IO_PS_CLK;
   wire processing_system7_0_FIXED_IO_PS_PORB;
   wire processing_system7_0_FIXED_IO_PS_SRSTB;
+  wire processing_system7_0_IIC_0_SCL_I;
+  wire processing_system7_0_IIC_0_SCL_O;
+  wire processing_system7_0_IIC_0_SCL_T;
+  wire processing_system7_0_IIC_0_SDA_I;
+  wire processing_system7_0_IIC_0_SDA_O;
+  wire processing_system7_0_IIC_0_SDA_T;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
   wire [1:0]processing_system7_0_M_AXI_GP0_ARBURST;
   wire [3:0]processing_system7_0_M_AXI_GP0_ARCACHE;
@@ -169,29 +179,31 @@ module design_1
   wire [0:0]rst_processing_system7_0_100M_peripheral_aresetn;
 
   assign AC_BCLK = ac_interface_0_AC_BCLK;
-  assign AC_MCLK = ac_interface_0_AC_MCLK;
+  assign AC_MCLK = processing_system7_0_FCLK_CLK2;
   assign AC_MUTEN = ac_interface_0_AC_MUTEN;
   assign AC_PBDAT = ac_interface_0_AC_PBDAT;
-  assign AC_PBLRC = ac_interface_0_AC_PBLRC;
+  assign AC_PBLRC = ac_interface_0_AC_RECLRC;
   assign AC_RECDAT_1 = AC_RECDAT;
   assign AC_RECLRC = ac_interface_0_AC_RECLRC;
+  assign IIC_0_scl_o = processing_system7_0_IIC_0_SCL_O;
+  assign IIC_0_scl_t = processing_system7_0_IIC_0_SCL_T;
+  assign IIC_0_sda_o = processing_system7_0_IIC_0_SDA_O;
+  assign IIC_0_sda_t = processing_system7_0_IIC_0_SDA_T;
   assign LED_tri_o[3:0] = axi_gpio_0_GPIO_TRI_O;
-  assign ac_scl = i2c_master_0_i2c_scl;
-  assign ac_sda = i2c_master_0_i2c_sda;
+  assign processing_system7_0_IIC_0_SCL_I = IIC_0_scl_i;
+  assign processing_system7_0_IIC_0_SDA_I = IIC_0_sda_i;
   GND GND
        (.G(GND_1));
   VCC VCC
        (.P(VCC_1));
   design_1_ac_interface_0_1 ac_interface_0
        (.AC_BCLK(ac_interface_0_AC_BCLK),
-        .AC_MCLK(ac_interface_0_AC_MCLK),
+        .AC_LRCLK(ac_interface_0_AC_RECLRC),
         .AC_MUTEN(ac_interface_0_AC_MUTEN),
         .AC_PBDAT(ac_interface_0_AC_PBDAT),
-        .AC_PBLRC(ac_interface_0_AC_PBLRC),
         .AC_RECDAT(AC_RECDAT_1),
-        .AC_RECLRC(ac_interface_0_AC_RECLRC),
         .mclk(processing_system7_0_FCLK_CLK2),
-        .sysclk(processing_system7_0_FCLK_CLK0));
+        .reset(rst_processing_system7_0_100M_peripheral_aresetn));
   design_1_axi_gpio_0_0 axi_gpio_0
        (.gpio_io_o(axi_gpio_0_GPIO_TRI_O),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
@@ -213,11 +225,6 @@ module design_1
         .s_axi_wready(processing_system7_0_axi_periph_M01_AXI_WREADY),
         .s_axi_wstrb(processing_system7_0_axi_periph_M01_AXI_WSTRB),
         .s_axi_wvalid(processing_system7_0_axi_periph_M01_AXI_WVALID));
-  design_1_i2c_master_0_0 i2c_master_0
-       (.clk(processing_system7_0_FCLK_CLK0),
-        .i2c_scl(i2c_master_0_i2c_scl),
-        .i2c_sda(i2c_master_0_i2c_sda),
-        .reset(GND_1));
   design_1_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),
@@ -239,6 +246,12 @@ module design_1
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_CLK2(processing_system7_0_FCLK_CLK2),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
+        .I2C0_SCL_I(processing_system7_0_IIC_0_SCL_I),
+        .I2C0_SCL_O(processing_system7_0_IIC_0_SCL_O),
+        .I2C0_SCL_T(processing_system7_0_IIC_0_SCL_T),
+        .I2C0_SDA_I(processing_system7_0_IIC_0_SDA_I),
+        .I2C0_SDA_O(processing_system7_0_IIC_0_SDA_O),
+        .I2C0_SDA_T(processing_system7_0_IIC_0_SDA_T),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),

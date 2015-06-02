@@ -1,14 +1,13 @@
-Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version      : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date              : Fri May 15 00:56:15 2015
-| Host              : nolan-desktop running 64-bit Fedora release 21 (Twenty One)
-| Command           : report_timing_summary -warn_on_violation -max_paths 10 -file ac_interface_timing_summary_routed.rpt -rpx ac_interface_timing_summary_routed.rpx
-| Design            : ac_interface
-| Device            : 7z010-clg400
-| Speed File        : -1  PRODUCTION 1.11 2014-09-11
-| Temperature Grade : C
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date         : Mon Jun  1 15:57:44 2015
+| Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file ac_interface_timing_summary_routed.rpt -rpx ac_interface_timing_summary_routed.rpx
+| Design       : ac_interface
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Timing Summary Report
 
@@ -47,12 +46,15 @@ Table of Contents
 9. checking loops
 10. checking partial_input_delay
 11. checking partial_output_delay
-12. checking unexpandable_clocks
-13. checking latch_loops
+12. checking latch_loops
 
 1. checking no_clock
 --------------------
- There are 0 register/latch pins with no clock.
+ There are 2 register/latch pins with no clock driven by root clock pin: mclk (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: reset (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: AC_BCLK_reg/C (HIGH)
 
 
 2. checking constant_clock
@@ -67,21 +69,21 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 0 pins that are not constrained for maximum delay.
+ There are 8 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 0 input ports with no input delay specified.
+ There are 2 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
 6. checking no_output_delay
 ---------------------------
- There are 0 ports with no output delay specified.
+ There are 3 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -113,12 +115,7 @@ Table of Contents
  There are 0 ports with partial output delay specified.
 
 
-12. checking unexpandable_clocks
---------------------------------
- There are 0 unexpandable clock pairs.
-
-
-13. checking latch_loops
+12. checking latch_loops
 ------------------------
  There are 0 combinational latch loops in the design through latch input
 

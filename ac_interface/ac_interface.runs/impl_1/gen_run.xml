@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1431676540">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1433199424">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="ac_interface.vdi"/>
   <File Type="BG-DRC" Name="ac_interface.drc"/>
@@ -13,9 +13,9 @@
   <File Type="BG-BIN" Name="ac_interface.bin"/>
   <File Type="BG-BIT" Name="ac_interface.bit"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ac_interface_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ac_interface_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ac_interface_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="ac_interface_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="ac_interface_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-SIMILARITY" Name="ac_interface_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-TIMING-RPX" Name="ac_interface_timing_summary_routed.rpx"/>
   <File Type="ROUTE-TIMING-PB" Name="ac_interface_timing_summary_routed.pb"/>
@@ -40,8 +40,10 @@
   <File Type="PLACE-DCP" Name="ac_interface_placed.dcp"/>
   <File Type="PWROPT-DRC" Name="ac_interface_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="ac_interface_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="ac_interface.hwdef"/>
   <File Type="OPT-DRC" Name="ac_interface_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="ac_interface_opt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ac_interface_timing_summary_postroute_physopted.pb"/>
   <File Type="PA-TCL" Name="ac_interface.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
@@ -61,7 +63,6 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="ac_interface"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

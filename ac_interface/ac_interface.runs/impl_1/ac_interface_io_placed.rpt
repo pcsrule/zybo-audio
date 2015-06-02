@@ -1,8 +1,8 @@
-Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Fri May 15 00:56:07 2015
-| Host         : nolan-desktop running 64-bit Fedora release 21 (Twenty One)
+| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date         : Mon Jun  1 15:57:35 2015
+| Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
 | Command      : report_io -file ac_interface_io_placed.rpt
 | Design       : ac_interface
 | Device       : xc7z010
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            11 |
+|             9 |
 +---------------+
 
 
@@ -31,7 +31,7 @@ Table of Contents
 --------------------------------
 
 +------------+-------------+------------+-------------------------+---------------+-------------+---------+------------+------+---------------------+----------------------+---------+------------+-----------+------+------------------+
-| Pin Number | Signal Name | Bank Type  | Pin Name                | Use           | IO Standard | IO Bank | Drive (mA) | Slew | On-chip Termination | Off-Chip Termination | Voltage | Constraint | Pull Type | Vref | Signal Integrity |
+| Pin Number | Signal Name | Bank Type  | Pin Name                | Use           | IO Standard | IO Bank | Drive (mA) | Slew | On-Chip Termination | Off-Chip Termination | Voltage | Constraint | Pull Type | Vref | Signal Integrity |
 +------------+-------------+------------+-------------------------+---------------+-------------+---------+------------+------+---------------------+----------------------+---------+------------+-----------+------+------------------+
 | A1         |             |            | PS_DDR_DM0_502          | PSS IO        |             |         |            |      |                     |                      |         |            |           |      |                  |
 | A2         |             |            | PS_DDR_DQ2_502          | PSS IO        |             |         |            |      |                     |                      |         |            |           |      |                  |
@@ -289,7 +289,7 @@ Table of Contents
 | N14        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | N15        |             | High Range | IO_L21P_T3_DQS_AD14P_35 | User IO       |             |      35 |            |      |                     |                      |         |            |           |      |                  |
 | N16        |             | High Range | IO_L21N_T3_DQS_AD14N_35 | User IO       |             |      35 |            |      |                     |                      |         |            |           |      |                  |
-| N17        | AC_RECDAT   | High Range | IO_L23P_T3_34           | INPUT         | LVCMOS18*   |      34 |            |      |                     |                 NONE |         | UNFIXED    |           |      | NONE             |
+| N17        | frame_sync  | High Range | IO_L23P_T3_34           | OUTPUT        | LVCMOS18*   |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | UNFIXED    |           |      | NONE             |
 | N18        |             | High Range | IO_L13P_T2_MRCC_34      | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | N19        |             | High Range | VCCO_34                 | VCCO          |             |      34 |            |      |                     |                      |    1.80 |            |           |      |                  |
 | N20        |             | High Range | IO_L14P_T2_SRCC_34      | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
@@ -308,7 +308,7 @@ Table of Contents
 | P13        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | P14        |             | High Range | IO_L6P_T0_34            | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | P15        | AC_MUTEN    | High Range | IO_L24P_T3_34           | OUTPUT        | LVCMOS18*   |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | UNFIXED    |           |      | NONE             |
-| P16        | AC_MCLK     | High Range | IO_L24N_T3_34           | OUTPUT        | LVCMOS18*   |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | UNFIXED    |           |      | NONE             |
+| P16        | AC_LRCLK    | High Range | IO_L24N_T3_34           | OUTPUT        | LVCMOS18*   |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | UNFIXED    |           |      | NONE             |
 | P17        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | P18        | AC_PBDAT    | High Range | IO_L23N_T3_34           | OUTPUT        | LVCMOS18*   |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | UNFIXED    |           |      | NONE             |
 | P19        |             | High Range | IO_L13N_T2_MRCC_34      | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
@@ -390,7 +390,7 @@ Table of Contents
 | V15        |             | High Range | IO_L10P_T1_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | V16        |             | High Range | IO_L18P_T2_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | V17        |             | High Range | IO_L21P_T3_DQS_34       | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
-| V18        |             | High Range | IO_L21N_T3_DQS_34       | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
+| V18        | reset       | High Range | IO_L21N_T3_DQS_34       | INPUT         | LVCMOS18*   |      34 |            |      |                     |                 NONE |         | UNFIXED    |           |      | NONE             |
 | V19        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | V20        |             | High Range | IO_L16P_T2_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | W1         |             |            | PS_DDR_DQ26_502         | PSS IO        |             |         |            |      |                     |                      |         |            |           |      |                  |
@@ -410,8 +410,8 @@ Table of Contents
 | W15        |             | High Range | IO_L10N_T1_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | W16        |             | High Range | IO_L18N_T2_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | W17        |             | High Range | VCCO_34                 | VCCO          |             |      34 |            |      |                     |                      |    1.80 |            |           |      |                  |
-| W18        |             | High Range | IO_L22P_T3_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
-| W19        | mclk        | High Range | IO_L22N_T3_34           | INPUT         | LVCMOS18*   |      34 |            |      |                     |                 NONE |         | UNFIXED    |           |      | NONE             |
+| W18        | mclk        | High Range | IO_L22P_T3_34           | INPUT         | LVCMOS18*   |      34 |            |      |                     |                 NONE |         | UNFIXED    |           |      | NONE             |
+| W19        | AC_RECDAT   | High Range | IO_L22N_T3_34           | INPUT         | LVCMOS18*   |      34 |            |      |                     |                 NONE |         | UNFIXED    |           |      | NONE             |
 | W20        |             | High Range | IO_L16N_T2_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | Y1         |             |            | PS_DDR_DM3_502          | PSS IO        |             |         |            |      |                     |                      |         |            |           |      |                  |
 | Y2         |             |            | PS_DDR_DQ28_502         | PSS IO        |             |         |            |      |                     |                      |         |            |           |      |                  |
