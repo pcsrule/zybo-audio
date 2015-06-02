@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2009 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -127,7 +127,7 @@ extern "C" {
 
 /* xutil_memtest defines */
 
-#define XIL_TESTMEM_INIT_VALUE  1
+#define XIL_TESTMEM_INIT_VALUE	1U
 
 /** @name Memory subtests
  * @{
@@ -135,12 +135,12 @@ extern "C" {
 /**
  * See the detailed description of the subtests in the file description.
  */
-#define XIL_TESTMEM_ALLMEMTESTS     0
-#define XIL_TESTMEM_INCREMENT       1
-#define XIL_TESTMEM_WALKONES        2
-#define XIL_TESTMEM_WALKZEROS       3
-#define XIL_TESTMEM_INVERSEADDR     4
-#define XIL_TESTMEM_FIXEDPATTERN    5
+#define XIL_TESTMEM_ALLMEMTESTS     0x00U
+#define XIL_TESTMEM_INCREMENT       0x01U
+#define XIL_TESTMEM_WALKONES        0x02U
+#define XIL_TESTMEM_WALKZEROS       0x03U
+#define XIL_TESTMEM_INVERSEADDR     0x04U
+#define XIL_TESTMEM_FIXEDPATTERN    0x05U
 #define XIL_TESTMEM_MAXTEST         XIL_TESTMEM_FIXEDPATTERN
 /* @} */
 
@@ -151,9 +151,9 @@ extern "C" {
 
 /* xutil_testmem prototypes */
 
-extern int Xil_TestMem32(u32 *Addr, u32 Words, u32 Pattern, u8 Subtest);
-extern int Xil_TestMem16(u16 *Addr, u32 Words, u16 Pattern, u8 Subtest);
-extern int Xil_TestMem8(u8 *Addr, u32 Words, u8 Pattern, u8 Subtest);
+extern s32 Xil_TestMem32(u32 *Addr, u32 Words, u32 Pattern, u8 Subtest);
+extern s32 Xil_TestMem16(u16 *Addr, u32 Words, u16 Pattern, u8 Subtest);
+extern s32 Xil_TestMem8(u8 *Addr, u32 Words, u8 Pattern, u8 Subtest);
 
 #ifdef __cplusplus
 }

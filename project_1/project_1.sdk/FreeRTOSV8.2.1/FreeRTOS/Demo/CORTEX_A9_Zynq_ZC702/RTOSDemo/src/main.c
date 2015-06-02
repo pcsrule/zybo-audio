@@ -153,6 +153,8 @@ static void prvSetupHardware( void );
 	#error Invalid mainSELECTED_APPLICATION setting.  See the comments at the top of this file and above the mainSELECTED_APPLICATION definition.
 #endif
 
+extern void main_radspwi(void);
+
 /*
  * The Xilinx projects use a BSP that do not allow the start up code to be
  * altered easily.  Therefore the vector table used by FreeRTOS is defined in
@@ -185,8 +187,9 @@ int main( void )
 	/* Configure the hardware ready to run the demo. */
 	prvSetupHardware();
 
+	main_radspwi();
 	/* The mainSELECTED_APPLICATION setting is described at the top
-	of this file. */
+	of this file.
 	#if( mainSELECTED_APPLICATION == 0 )
 	{
 		main_blinky();
@@ -200,7 +203,7 @@ int main( void )
 		main_lwIP();
 	}
 	#endif
-
+*/
 	/* Don't expect to reach here. */
 	return 0;
 }

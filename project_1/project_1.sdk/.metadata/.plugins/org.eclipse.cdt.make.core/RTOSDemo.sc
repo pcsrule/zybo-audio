@@ -2,6 +2,9 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.arm.exe.debug.1043799205;xilinx.gnu.arm.exe.debug.1043799205.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/include"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/include-fixed"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/include"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/include-fixed"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/../../../../arm-xilinx-eabi/include"/>
@@ -9,8 +12,11 @@
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
 <definedSymbol symbol="__GNUC_MINOR__=8"/>
+<definedSymbol symbol="__GNUC_MINOR__=9"/>
 <definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=1"/>
 <definedSymbol symbol="__VERSION__=&quot;4.8.3 20140320 (prerelease)&quot;"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.1&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -357,11 +363,19 @@
 <definedSymbol symbol="__USES_INITFINI__=1"/>
 <definedSymbol symbol="__CS_SOURCERYGXX_MAJ__=2014"/>
 <definedSymbol symbol="__CS_SOURCERYGXX_MIN__=5"/>
+<definedSymbol symbol="__CS_SOURCERYGXX_MIN__=11"/>
 <definedSymbol symbol="__CS_SOURCERYGXX_REV__=22"/>
+<definedSymbol symbol="__CS_SOURCERYGXX_REV__=31"/>
+<definedSymbol symbol="__GCC_IEC_559=2"/>
+<definedSymbol symbol="__GCC_IEC_559_COMPLEX=2"/>
+<definedSymbol symbol="__ARM_32BIT_STATE=1"/>
 </collector>
 </instance>
 <instance id="xilinx.gnu.arm.exe.debug.1043799205;xilinx.gnu.arm.exe.debug.1043799205.;xilinx.gnu.arm.c.toolchain.compiler.debug.1720434900;xilinx.gnu.arm.c.compiler.input.783477932">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/include"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/include-fixed"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/include"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/include-fixed"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/../../../../arm-xilinx-eabi/include"/>
@@ -369,8 +383,11 @@
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
 <definedSymbol symbol="__GNUC_MINOR__=8"/>
+<definedSymbol symbol="__GNUC_MINOR__=9"/>
 <definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=1"/>
 <definedSymbol symbol="__VERSION__=&quot;4.8.3 20140320 (prerelease)&quot;"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.1&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -717,7 +734,12 @@
 <definedSymbol symbol="__USES_INITFINI__=1"/>
 <definedSymbol symbol="__CS_SOURCERYGXX_MAJ__=2014"/>
 <definedSymbol symbol="__CS_SOURCERYGXX_MIN__=5"/>
+<definedSymbol symbol="__CS_SOURCERYGXX_MIN__=11"/>
 <definedSymbol symbol="__CS_SOURCERYGXX_REV__=22"/>
+<definedSymbol symbol="__CS_SOURCERYGXX_REV__=31"/>
+<definedSymbol symbol="__GCC_IEC_559=2"/>
+<definedSymbol symbol="__GCC_IEC_559_COMPLEX=2"/>
+<definedSymbol symbol="__ARM_32BIT_STATE=1"/>
 </collector>
 </instance>
 </scannerInfo>

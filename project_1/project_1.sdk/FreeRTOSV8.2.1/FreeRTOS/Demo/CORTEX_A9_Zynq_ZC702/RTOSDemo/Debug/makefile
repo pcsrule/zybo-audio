@@ -8,6 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include src/radspwi/subdir.mk
 -include src/lwIP_Demo/lwip-1.4.0/src/netif/subdir.mk
 -include src/lwIP_Demo/lwip-1.4.0/src/core/ipv4/subdir.mk
 -include src/lwIP_Demo/lwip-1.4.0/src/core/subdir.mk

@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -45,6 +45,8 @@
 * ----- ------  -------- -----------------------------------------------
 * 1.00a drg/jz  01/30/10 First release
 * 1.04a kpc		11/07/13 Added function prototype.
+* 3.0	sk		11/03/14 Modified the TimeOut Register value to 0xFF
+*				01/31/15 Modified the code according to MISRAC 2012 Compliant.
 * </pre>
 *
 ******************************************************************************/
@@ -68,17 +70,17 @@ extern "C" {
  * Register offsets for the IIC.
  * @{
  */
-#define XIICPS_CR_OFFSET		0x00  /**< 32-bit Control */
-#define XIICPS_SR_OFFSET		0x04  /**< Status */
-#define XIICPS_ADDR_OFFSET		0x08  /**< IIC Address */
-#define XIICPS_DATA_OFFSET		0x0C  /**< IIC FIFO Data */
-#define XIICPS_ISR_OFFSET		0x10  /**< Interrupt Status */
-#define XIICPS_TRANS_SIZE_OFFSET	0x14  /**< Transfer Size */
-#define XIICPS_SLV_PAUSE_OFFSET		0x18  /**< Slave monitor pause */
-#define XIICPS_TIME_OUT_OFFSET		0x1C  /**< Time Out */
-#define XIICPS_IMR_OFFSET		0x20  /**< Interrupt Enabled Mask */
-#define XIICPS_IER_OFFSET		0x24  /**< Interrupt Enable */
-#define XIICPS_IDR_OFFSET		0x28  /**< Interrupt Disable */
+#define XIICPS_CR_OFFSET			0x00U  /**< 32-bit Control */
+#define XIICPS_SR_OFFSET			0x04U  /**< Status */
+#define XIICPS_ADDR_OFFSET			0x08U  /**< IIC Address */
+#define XIICPS_DATA_OFFSET			0x0CU  /**< IIC FIFO Data */
+#define XIICPS_ISR_OFFSET			0x10U  /**< Interrupt Status */
+#define XIICPS_TRANS_SIZE_OFFSET	0x14U  /**< Transfer Size */
+#define XIICPS_SLV_PAUSE_OFFSET		0x18U  /**< Slave monitor pause */
+#define XIICPS_TIME_OUT_OFFSET		0x1CU  /**< Time Out */
+#define XIICPS_IMR_OFFSET			0x20U  /**< Interrupt Enabled Mask */
+#define XIICPS_IER_OFFSET			0x24U  /**< Interrupt Enable */
+#define XIICPS_IDR_OFFSET			0x28U  /**< Interrupt Disable */
 /* @} */
 
 /** @name Control Register
@@ -88,26 +90,26 @@ extern "C" {
  * @{
  */
 
-#define XIICPS_CR_DIV_A_MASK	0x0000C000 /**< Clock Divisor A */
-#define XIICPS_CR_DIV_A_SHIFT		14 /**< Clock Divisor A shift */
-#define XIICPS_DIV_A_MAX		4  /**< Maximum value of Divisor A */
-#define XIICPS_CR_DIV_B_MASK	0x00003F00 /**< Clock Divisor B */
-#define XIICPS_CR_DIV_B_SHIFT		8  /**< Clock Divisor B shift */
-#define XIICPS_CR_CLR_FIFO_MASK	0x00000040 /**< Clear FIFO, auto clears*/
-#define XIICPS_CR_SLVMON_MASK	0x00000020 /**< Slave monitor mode */
-#define XIICPS_CR_HOLD_MASK	0x00000010 /**<  Hold bus 1=Hold scl,
-						0=terminate transfer */
-#define XIICPS_CR_ACKEN_MASK	0x00000008  /**< Enable TX of ACK when
-						 Master receiver*/
-#define XIICPS_CR_NEA_MASK	0x00000004  /**< Addressing Mode 1=7 bit,
-						 0=10 bit */
-#define XIICPS_CR_MS_MASK	0x00000002  /**< Master mode bit 1=Master,
-						 0=Slave */
-#define XIICPS_CR_RD_WR_MASK	0x00000001  /**< Read or Write Master
-						 transfer  0=Transmitter,
-						 1=Receiver*/
-#define XIICPS_CR_RESET_VALUE		0   /**< Reset value of the Control
-						 register */
+#define XIICPS_CR_DIV_A_MASK	0x0000C000U /**< Clock Divisor A */
+#define XIICPS_CR_DIV_A_SHIFT			14U /**< Clock Divisor A shift */
+#define XIICPS_DIV_A_MAX				 4U /**< Maximum value of Divisor A */
+#define XIICPS_CR_DIV_B_MASK	0x00003F00U /**< Clock Divisor B */
+#define XIICPS_CR_DIV_B_SHIFT			 8U /**< Clock Divisor B shift */
+#define XIICPS_CR_CLR_FIFO_MASK	0x00000040U /**< Clear FIFO, auto clears*/
+#define XIICPS_CR_SLVMON_MASK	0x00000020U /**< Slave monitor mode */
+#define XIICPS_CR_HOLD_MASK		0x00000010U /**<  Hold bus 1=Hold scl,
+												0=terminate transfer */
+#define XIICPS_CR_ACKEN_MASK	0x00000008U /**< Enable TX of ACK when
+												Master receiver*/
+#define XIICPS_CR_NEA_MASK		0x00000004U /**< Addressing Mode 1=7 bit,
+												0=10 bit */
+#define XIICPS_CR_MS_MASK		0x00000002U /**< Master mode bit 1=Master,
+												0=Slave */
+#define XIICPS_CR_RD_WR_MASK	0x00000001U /**< Read or Write Master
+												transfer  0=Transmitter,
+												1=Receiver*/
+#define XIICPS_CR_RESET_VALUE			 0U /**< Reset value of the Control
+												register */
 /* @} */
 
 /** @name IIC Status Register
@@ -115,11 +117,11 @@ extern "C" {
  * This register is used to indicate status of the IIC controller. Read only
  * @{
  */
-#define XIICPS_SR_BA_MASK	0x00000100  /**< Bus Active Mask */
-#define XIICPS_SR_RXOVF_MASK	0x00000080  /**< Receiver Overflow Mask */
-#define XIICPS_SR_TXDV_MASK	0x00000040  /**< Transmit Data Valid Mask */
-#define XIICPS_SR_RXDV_MASK	0x00000020  /**< Receiver Data Valid Mask */
-#define XIICPS_SR_RXRW_MASK	0x00000008  /**< Receive read/write Mask */
+#define XIICPS_SR_BA_MASK		0x00000100U  /**< Bus Active Mask */
+#define XIICPS_SR_RXOVF_MASK	0x00000080U  /**< Receiver Overflow Mask */
+#define XIICPS_SR_TXDV_MASK		0x00000040U  /**< Transmit Data Valid Mask */
+#define XIICPS_SR_RXDV_MASK		0x00000020U  /**< Receiver Data Valid Mask */
+#define XIICPS_SR_RXRW_MASK		0x00000008U  /**< Receive read/write Mask */
 /* @} */
 
 /** @name IIC Address Register
@@ -178,24 +180,24 @@ extern "C" {
  * @{
  */
 
-#define XIICPS_IXR_ARB_LOST_MASK  0x00000200	 /**< Arbitration Lost Interrupt
-						   mask */
-#define XIICPS_IXR_RX_UNF_MASK    0x00000080	 /**< FIFO Recieve Underflow
-						   Interrupt mask */
-#define XIICPS_IXR_TX_OVR_MASK    0x00000040	 /**< Transmit Overflow
-						   Interrupt mask */
-#define XIICPS_IXR_RX_OVR_MASK    0x00000020	 /**< Receive Overflow Interrupt
-						   mask */
-#define XIICPS_IXR_SLV_RDY_MASK   0x00000010	 /**< Monitored Slave Ready
-						   Interrupt mask */
-#define XIICPS_IXR_TO_MASK        0x00000008	 /**< Transfer Time Out
-						   Interrupt mask */
-#define XIICPS_IXR_NACK_MASK      0x00000004	 /**< NACK Interrupt mask */
-#define XIICPS_IXR_DATA_MASK      0x00000002	 /**< Data Interrupt mask */
-#define XIICPS_IXR_COMP_MASK      0x00000001	 /**< Transfer Complete
-						   Interrupt mask */
-#define XIICPS_IXR_DEFAULT_MASK   0x000002FF	 /**< Default ISR Mask */
-#define XIICPS_IXR_ALL_INTR_MASK  0x000002FF	 /**< All ISR Mask */
+#define XIICPS_IXR_ARB_LOST_MASK  0x00000200U	 /**< Arbitration Lost Interrupt
+													mask */
+#define XIICPS_IXR_RX_UNF_MASK    0x00000080U	 /**< FIFO Recieve Underflow
+													Interrupt mask */
+#define XIICPS_IXR_TX_OVR_MASK    0x00000040U	 /**< Transmit Overflow
+													Interrupt mask */
+#define XIICPS_IXR_RX_OVR_MASK    0x00000020U	 /**< Receive Overflow Interrupt
+													mask */
+#define XIICPS_IXR_SLV_RDY_MASK   0x00000010U	 /**< Monitored Slave Ready
+													Interrupt mask */
+#define XIICPS_IXR_TO_MASK        0x00000008U	 /**< Transfer Time Out
+													Interrupt mask */
+#define XIICPS_IXR_NACK_MASK      0x00000004U	 /**< NACK Interrupt mask */
+#define XIICPS_IXR_DATA_MASK      0x00000002U	 /**< Data Interrupt mask */
+#define XIICPS_IXR_COMP_MASK      0x00000001U	 /**< Transfer Complete
+													Interrupt mask */
+#define XIICPS_IXR_DEFAULT_MASK   0x000002FFU	 /**< Default ISR Mask */
+#define XIICPS_IXR_ALL_INTR_MASK  0x000002FFU	 /**< All ISR Mask */
 /* @} */
 
 
@@ -252,8 +254,8 @@ extern "C" {
 * Read/Write
 * @{
  */
-#define XIICPS_TIME_OUT_MASK    0x000000FF    /**< IIC Time Out mask */
-#define XIICPS_TO_RESET_VALUE   0x0000001F    /**< IIC Time Out reset value */
+#define XIICPS_TIME_OUT_MASK    0x000000FFU    /**< IIC Time Out mask */
+#define XIICPS_TO_RESET_VALUE   0x000000FFU    /**< IIC Time Out reset value */
 /* @} */
 
 /**************************** Type Definitions *******************************/
@@ -278,7 +280,7 @@ extern "C" {
 *
 ******************************************************************************/
 #define XIicPs_ReadReg(BaseAddress, RegOffset) \
-	XIicPs_In32((BaseAddress) + (RegOffset))
+	XIicPs_In32((BaseAddress) + (u32)(RegOffset))
 
 /***************************************************************************/
 /**
@@ -296,7 +298,7 @@ extern "C" {
 *
 ******************************************************************************/
 #define XIicPs_WriteReg(BaseAddress, RegOffset, RegisterValue) \
-	XIicPs_Out32((BaseAddress) + (RegOffset), (RegisterValue))
+	XIicPs_Out32((BaseAddress) + (u32)(RegOffset), (u32)(RegisterValue))
 
 /***************************************************************************/
 /**
@@ -370,7 +372,7 @@ extern "C" {
 /*
  * Perform reset operation to the I2c interface
  */
-void XIicPs_ResetHw(u32 BaseAddr);
+void XIicPs_ResetHw(u32 BaseAddress);
 #ifdef __cplusplus
 }
 #endif

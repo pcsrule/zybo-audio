@@ -1,7 +1,6 @@
-// $Id: profile.h,v 1.1.2.2 2011/05/30 06:46:18 svemula Exp $
 /******************************************************************************
 *
-* Copyright (C) 2002 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2002 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -31,10 +30,11 @@
 *
 ******************************************************************************/
 
-#ifndef	_PROFILE_H
-#define	_PROFILE_H	1
+#ifndef	PROFILE_H
+#define	PROFILE_H	1
 
 #include <stdio.h>
+#include "xil_types.h"
 #include "profile_config.h"
 
 #ifdef PROC_MICROBLAZE
@@ -47,8 +47,9 @@ extern "C" {
 
 void _system_init( void ) ;
 void _system_clean( void ) ;
-void mcount(unsigned long frompc, unsigned long selfpc);
+void mcount(u32 frompc, u32 selfpc);
 void profile_intr_handler( void ) ;
+void _profile_init( void );
 
 
 
@@ -59,19 +60,19 @@ void profile_intr_handler( void ) ;
 /*
  * histogram counters are unsigned shorts (according to the kernel).
  */
-#define	HISTCOUNTER	unsigned short
+#define	HISTCOUNTER	u16
 
 struct tostruct {
-	unsigned long  selfpc;
-	long	       count;
-	short 	       link;
-	unsigned short pad;
+	u32  selfpc;
+	s32	 count;
+	s16  link;
+	u16	 pad;
 };
 
 struct fromstruct {
-	unsigned long frompc ;
-	short link ;
-	unsigned short pad ;
+	u32 frompc ;
+	s16 link ;
+	u16 pad ;
 } ;
 
 /*
@@ -84,27 +85,27 @@ struct fromstruct {
  * The profiling data structures are housed in this structure.
  */
 struct gmonparam {
-	long int		state;
+	s32		state;
 
-	// Histogram Information
-	unsigned short		*kcount;	/* No. of bins in histogram */
-	unsigned long		kcountsize;	/* Histogram samples */
+	/* Histogram Information */
+	u16		*kcount;	/* No. of bins in histogram */
+	u32		kcountsize;	/* Histogram samples */
 
-	// Call-graph Information
+	/* Call-graph Information */
 	struct fromstruct	*froms;
-	unsigned long		fromssize;
+	u32		fromssize;
 	struct tostruct		*tos;
-	unsigned long		tossize;
+	u32		tossize;
 
-	// Initialization I/Ps
-	unsigned long    	lowpc;
-	unsigned long		highpc;
-	unsigned long		textsize;
-	//unsigned long 		cg_froms;
-	//unsigned long 		cg_tos;
+	/* Initialization I/Ps */
+	u32    	lowpc;
+	u32		highpc;
+	u32		textsize;
+	/* u32 		cg_froms, */
+	/* u32 		cg_tos, */
 };
 extern struct gmonparam *_gmonparam;
-extern int n_gmon_sections;
+extern s32 n_gmon_sections;
 
 /*
  * Possible states of profiling.
@@ -127,16 +128,7 @@ extern int n_gmon_sections;
 }
 #endif
 
-#endif 		/* _PROFILE_H */
-
-
-
-
-
-
-
-
-
+#endif 		/* PROFILE_H */
 
 
 

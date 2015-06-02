@@ -1550,3 +1550,52 @@ Cannot Read from target
 00:34:52 INFO  : ps7_init is completed.
 00:34:53 INFO  : ps7_post_config is completed.
 00:44:28 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+03:39:04 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+03:39:04 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+03:39:05 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+03:39:05 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433241489000,  Project:1430724663000
+03:39:05 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+03:39:05 INFO  : XSDB server has started successfully.
+03:39:12 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+03:39:14 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:39:16 INFO  : 
+03:39:17 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+03:39:17 INFO  : Clearing existing target manager status.
+03:39:19 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:41:17 INFO  : System reset is completed.
+03:41:19 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:41:19 INFO  : ps7_init is completed.
+03:41:19 INFO  : ps7_post_config is completed.
+03:41:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+03:41:40 INFO  : System reset is completed.
+03:41:42 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:41:42 INFO  : ps7_init is completed.
+03:41:42 INFO  : ps7_post_config is completed.
+03:42:36 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+03:42:38 INFO  : System reset is completed.
+03:42:40 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:42:40 INFO  : ps7_init is completed.
+03:42:40 INFO  : ps7_post_config is completed.
+03:43:35 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+03:43:36 INFO  : System reset is completed.
+03:43:38 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:43:39 INFO  : ps7_init is completed.
+03:43:39 INFO  : ps7_post_config is completed.
+03:44:47 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+03:47:34 INFO  : Processing command line option -hwspec /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+03:47:35 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+03:47:35 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+03:47:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433242032000,  Project:1433241489000
+03:47:35 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+03:47:35 INFO  : Copied contents of /home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+03:47:36 INFO  : XSDB server has started successfully.
+03:47:37 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:47:40 INFO  : 
+03:47:41 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+03:47:41 INFO  : Clearing existing target manager status.
+03:47:43 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:48:08 INFO  : System reset is completed.
+03:48:10 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/Vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:48:10 INFO  : ps7_init is completed.
+03:48:10 INFO  : ps7_post_config is completed.
+03:48:57 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

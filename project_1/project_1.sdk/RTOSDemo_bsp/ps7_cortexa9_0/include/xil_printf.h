@@ -8,8 +8,8 @@ extern "C" {
 #include <ctype.h>
 #include <string.h>
 #include <stdarg.h>
-#include "xparameters.h"
 #include "xil_types.h"
+#include "xparameters.h"
 
 /*----------------------------------------------------*/
 /* Use the following parameter passing structure to   */
@@ -27,18 +27,15 @@ struct params_s;
 /* that is unacceptable in most embedded systems.    */
 /*---------------------------------------------------*/
 
-typedef char* charptr;
-typedef int (*func_ptr)(int c);
+typedef char8* charptr;
+typedef s32 (*func_ptr)(int c);
 
 /*                                                   */
-void padding( const int l_flag, struct params_s *par);
-void outs( charptr lp, struct params_s *par);
-void outnum( const long n, const long base, struct params_s *par);
-int getnum( charptr* linep);
-void xil_printf( const char *ctrl1, ...);
-void print( const char *ptr);
-void outbyte (char);
-char inbyte(void);
+
+void xil_printf( const char8 *ctrl1, ...);
+void print( const char8 *ptr);
+extern void outbyte (char8 c);
+extern char8 inbyte(void);
 
 #ifdef __cplusplus
 }

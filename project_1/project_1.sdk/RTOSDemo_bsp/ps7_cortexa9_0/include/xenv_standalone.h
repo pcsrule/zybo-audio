@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2002 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2002 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -65,6 +65,8 @@
 
 #ifndef XENV_STANDALONE_H
 #define XENV_STANDALONE_H
+
+#include "xil_types.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -149,7 +151,7 @@ extern "C" {
  *****************************************************************************/
 
 #define XENV_MEM_FILL(DestPtr, Data, Bytes) \
-	memset((void *) DestPtr, (int) Data, (size_t) Bytes)
+	memset((void *) DestPtr, (s32) Data, (size_t) Bytes)
 
 
 
@@ -163,7 +165,7 @@ extern "C" {
  * A structure that contains a time stamp used by other time stamp macros
  * defined below. This structure is processor dependent.
  */
-typedef int XENV_TIME_STAMP;
+typedef s32 XENV_TIME_STAMP;
 
 /*****************************************************************************/
 /**
@@ -278,16 +280,16 @@ typedef int XENV_TIME_STAMP;
 #  define XCACHE_INVALIDATE_DCACHE()  	microblaze_invalidate_dcache()
 
 #  define XCACHE_INVALIDATE_DCACHE_RANGE(Addr, Len) \
-			microblaze_invalidate_dcache_range((int)(Addr), (int)(Len))
+			microblaze_invalidate_dcache_range((s32)(Addr), (s32)(Len))
 
 #if (XPAR_MICROBLAZE_DCACHE_USE_WRITEBACK == 1)
 #  define XCACHE_FLUSH_DCACHE()  		microblaze_flush_dcache()
 #  define XCACHE_FLUSH_DCACHE_RANGE(Addr, Len) \
-			microblaze_flush_dcache_range((int)(Addr), (int)(Len))
+			microblaze_flush_dcache_range((s32)(Addr), (s32)(Len))
 #else
 #  define XCACHE_FLUSH_DCACHE()  		microblaze_invalidate_dcache()
 #  define XCACHE_FLUSH_DCACHE_RANGE(Addr, Len) \
-			microblaze_invalidate_dcache_range((int)(Addr), (int)(Len))
+			microblaze_invalidate_dcache_range((s32)(Addr), (s32)(Len))
 #endif	/*XPAR_MICROBLAZE_DCACHE_USE_WRITEBACK*/
 
 #else
@@ -307,7 +309,7 @@ typedef int XENV_TIME_STAMP;
 #  define XCACHE_INVALIDATE_ICACHE()  	microblaze_invalidate_icache()
 
 #  define XCACHE_INVALIDATE_ICACHE_RANGE(Addr, Len) \
-			microblaze_invalidate_icache_range((int)(Addr), (int)(Len))
+			microblaze_invalidate_icache_range((s32)(Addr), (s32)(Len))
 
 #else
 #  define XCACHE_ENABLE_ICACHE()
@@ -340,10 +342,10 @@ typedef int XENV_TIME_STAMP;
 #define XCACHE_DISABLE_ICACHE()		XCache_DisableICache()
 
 #define XCACHE_INVALIDATE_DCACHE_RANGE(Addr, Len) \
-		XCache_InvalidateDCacheRange((unsigned int)(Addr), (unsigned)(Len))
+		XCache_InvalidateDCacheRange((u32)(Addr), (u32)(Len))
 
 #define XCACHE_FLUSH_DCACHE_RANGE(Addr, Len) \
-		XCache_FlushDCacheRange((unsigned int)(Addr), (unsigned)(Len))
+		XCache_FlushDCacheRange((u32)(Addr), (u32)(Len))
 
 #define XCACHE_INVALIDATE_ICACHE()	XCache_InvalidateICache()
 
@@ -364,4 +366,3 @@ typedef int XENV_TIME_STAMP;
 #endif
 
 #endif	/* #ifndef XENV_STANDALONE_H */
-

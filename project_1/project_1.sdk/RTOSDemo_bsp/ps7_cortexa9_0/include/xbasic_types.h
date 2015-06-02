@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -89,15 +89,15 @@ typedef Xuint8          u8;
 #endif
 
 #ifndef TRUE
-#  define TRUE		1
+#  define TRUE		1U
 #endif
 
 #ifndef FALSE
-#  define FALSE		0
+#  define FALSE		0U
 #endif
 
 #ifndef NULL
-#define NULL		0
+#define NULL		0U
 #endif
 
 /*

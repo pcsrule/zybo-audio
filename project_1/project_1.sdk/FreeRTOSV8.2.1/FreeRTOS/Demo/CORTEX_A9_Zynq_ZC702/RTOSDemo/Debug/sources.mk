@@ -16,6 +16,7 @@ ELFSIZE :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+src/radspwi \
 src \
 src/lwIP_Demo \
 src/lwIP_Demo/lwip-1.4.0/src/netif \

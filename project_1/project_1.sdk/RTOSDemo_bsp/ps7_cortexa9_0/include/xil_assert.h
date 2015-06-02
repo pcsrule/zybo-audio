@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2009 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -49,6 +49,8 @@
 #ifndef XIL_ASSERT_H	/* prevent circular inclusions */
 #define XIL_ASSERT_H	/* by using protection macros */
 
+#include "xil_types.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -59,19 +61,19 @@ extern "C" {
 
 /************************** Constant Definitions *****************************/
 
-#define XIL_ASSERT_NONE     0
-#define XIL_ASSERT_OCCURRED 1
+#define XIL_ASSERT_NONE     0U
+#define XIL_ASSERT_OCCURRED 1U
 #define XNULL NULL
 
-extern unsigned int Xil_AssertStatus;
-extern void Xil_Assert(const char *, int);
+extern u32 Xil_AssertStatus;
+extern void Xil_Assert(const char8 *File, s32 Line);
 void XNullHandler(void *NullParameter);
 
 /**
  * This data type defines a callback to be invoked when an
  * assert occurs. The callback is invoked only when asserts are enabled
  */
-typedef void (*Xil_AssertCallback) (const char *File, int Line);
+typedef void (*Xil_AssertCallback) (const char8 *File, s32 Line);
 
 /***************** Macros (Inline Functions) Definitions *********************/
 
@@ -83,7 +85,7 @@ typedef void (*Xil_AssertCallback) (const char *File, int Line);
 * (void). This in conjunction with the Xil_AssertWait boolean can be used to
 * accomodate tests so that asserts which fail allow execution to continue.
 *
-* @param    expression is the expression to evaluate. If it evaluates to
+* @param    Expression is the expression to evaluate. If it evaluates to
 *           false, the assert occurs.
 *
 * @return   Returns void unless the Xil_AssertWait variable is true, in which
@@ -109,7 +111,7 @@ typedef void (*Xil_AssertCallback) (const char *File, int Line);
 * conjunction with the Xil_AssertWait boolean can be used to accomodate tests
 * so that asserts which fail allow execution to continue.
 *
-* @param    expression is the expression to evaluate. If it evaluates to false,
+* @param    Expression is the expression to evaluate. If it evaluates to false,
 *           the assert occurs.
 *
 * @return   Returns 0 unless the Xil_AssertWait variable is true, in which

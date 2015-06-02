@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -44,7 +44,9 @@
 * ----- ---- -------- -------------------------------------------------------
 * 1.00a hbm  07/14/09 First release
 * 3.03a sdm  05/30/11 Added Xuint64 typedef and XUINT64_MSW/XUINT64_LSW macros
-* 4.2   srt  07/03/14 Use standard definitions from stdint.h
+* 5.00 	pkp  05/29/14 Made changes for 64 bit architecture
+*	srt  07/14/14 Use standard definitions from stdint.h and stddef.h
+*		      Define LONG and ULONG datatypes and mask values
 * </pre>
 *
 ******************************************************************************/
@@ -58,19 +60,19 @@
 /************************** Constant Definitions *****************************/
 
 #ifndef TRUE
-#  define TRUE		1
+#  define TRUE		1U
 #endif
 
 #ifndef FALSE
-#  define FALSE		0
+#  define FALSE		0U
 #endif
 
 #ifndef NULL
-#define NULL		0
+#define NULL		0U
 #endif
 
-#define XIL_COMPONENT_IS_READY     0x11111111  /**< component has been initialized */
-#define XIL_COMPONENT_IS_STARTED   0x22222222  /**< component has been started */
+#define XIL_COMPONENT_IS_READY     0x11111111U  /**< component has been initialized */
+#define XIL_COMPONENT_IS_STARTED   0x22222222U  /**< component has been started */
 
 /** @name New types
  * New simple types.
@@ -124,15 +126,27 @@ typedef struct
 /**
  * xbasic_types.h does not typedef s* or u64
  */
-typedef uint64_t u64;
 
+typedef char char8;
 typedef int8_t s8;
 typedef int16_t s16;
 typedef int32_t s32;
 typedef int64_t s64;
+typedef uint64_t u64;
+typedef int sint32;
+
 typedef intptr_t INTPTR;
 typedef uintptr_t UINTPTR;
-typedef ptrdiff_t PTRDIFF; 
+typedef ptrdiff_t PTRDIFF;
+
+#if !defined(LONG) || !defined(ULONG)
+typedef long LONG;
+typedef unsigned long ULONG;
+#endif
+
+#define ULONG64_HI_MASK	0xFFFFFFFF00000000U
+#define ULONG64_LO_MASK	~ULONG64_HI_MASK
+
 #else
 #include <linux/types.h>
 #endif
@@ -156,15 +170,15 @@ typedef void (*XExceptionHandler) (void *InstancePtr);
 /************************** Constant Definitions *****************************/
 
 #ifndef TRUE
-#define TRUE		1
+#define TRUE		1U
 #endif
 
 #ifndef FALSE
-#define FALSE		0
+#define FALSE		0U
 #endif
 
 #ifndef NULL
-#define NULL		0
+#define NULL		0U
 #endif
 
 #endif	/* end of protection macro */
