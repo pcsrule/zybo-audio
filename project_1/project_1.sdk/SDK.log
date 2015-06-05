@@ -1599,3 +1599,908 @@ Cannot Read from target
 03:48:10 INFO  : ps7_init is completed.
 03:48:10 INFO  : ps7_post_config is completed.
 03:48:57 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:37:32 INFO  : Processing command line option -hwspec /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf.
+17:37:32 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+17:37:33 INFO  : XSDB server has started successfully.
+17:39:25 INFO  : System reset is completed.
+17:39:27 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:39:27 INFO  : ps7_init is completed.
+17:39:27 INFO  : ps7_post_config is completed.
+17:40:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:40:43 INFO  : System reset is completed.
+17:40:44 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:40:45 INFO  : ps7_init is completed.
+17:40:45 INFO  : ps7_post_config is completed.
+17:47:34 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:47:36 INFO  : System reset is completed.
+17:47:38 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:47:39 INFO  : ps7_init is completed.
+17:47:39 INFO  : ps7_post_config is completed.
+18:18:38 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433467102000,  Project:1433464619000
+18:18:38 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:18:38 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+18:18:41 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:18:44 INFO  : 
+18:18:45 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+18:18:45 INFO  : Clearing existing target manager status.
+18:18:45 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:19:08 INFO  : System reset is completed.
+18:19:09 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:19:10 INFO  : ps7_init is completed.
+18:19:10 INFO  : ps7_post_config is completed.
+18:24:43 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433467464000,  Project:1433467102000
+18:24:43 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:24:43 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+18:24:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:24:49 INFO  : 
+18:24:49 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+18:24:49 INFO  : Clearing existing target manager status.
+18:24:49 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:26:10 INFO  : System reset is completed.
+18:26:12 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:26:12 INFO  : ps7_init is completed.
+18:26:12 INFO  : ps7_post_config is completed.
+18:34:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433468076000,  Project:1433467464000
+18:34:50 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:34:50 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+18:34:54 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:34:56 INFO  : 
+18:34:57 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+18:34:57 INFO  : Clearing existing target manager status.
+18:34:57 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:35:14 INFO  : System reset is completed.
+18:35:18 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:35:21 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0xf8000008
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1073)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:483)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:670)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+18:35:29 INFO  : System reset is completed.
+18:35:30 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:35:31 INFO  : ps7_init is completed.
+18:35:31 INFO  : ps7_post_config is completed.
+18:43:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433468585000,  Project:1433468076000
+18:43:31 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:43:31 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+18:43:34 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:43:37 INFO  : 
+18:43:38 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+18:43:38 INFO  : Clearing existing target manager status.
+18:43:38 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:44:33 INFO  : System reset is completed.
+18:44:34 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:44:35 INFO  : ps7_init is completed.
+18:44:35 INFO  : ps7_post_config is completed.
+18:48:15 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433468867000,  Project:1433468585000
+18:48:15 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:48:15 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+18:48:18 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:48:21 INFO  : 
+18:48:22 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+18:48:22 INFO  : Clearing existing target manager status.
+18:48:22 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:49:16 INFO  : System reset is completed.
+18:49:18 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:49:19 INFO  : ps7_init is completed.
+18:49:19 INFO  : ps7_post_config is completed.
+18:54:45 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433469247000,  Project:1433468867000
+18:54:45 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:54:45 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+18:54:49 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:54:52 INFO  : 
+18:54:52 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+18:54:52 INFO  : Clearing existing target manager status.
+18:54:52 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:55:10 INFO  : System reset is completed.
+18:55:12 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:55:13 INFO  : ps7_init is completed.
+18:55:13 INFO  : ps7_post_config is completed.
+19:00:05 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433469586000,  Project:1433469247000
+19:00:05 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:00:05 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+19:00:10 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:00:13 INFO  : 
+19:00:13 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+19:00:13 INFO  : Clearing existing target manager status.
+19:00:13 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:00:36 INFO  : System reset is completed.
+19:00:38 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:00:38 INFO  : ps7_init is completed.
+19:00:39 INFO  : ps7_post_config is completed.
+19:11:25 INFO  : System reset is completed.
+19:11:26 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:11:27 INFO  : ps7_init is completed.
+19:11:27 INFO  : ps7_post_config is completed.
+19:28:53 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433471310000,  Project:1433469586000
+19:28:53 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:28:53 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+19:28:58 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:29:00 INFO  : 
+19:29:01 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+19:29:01 INFO  : Clearing existing target manager status.
+19:29:01 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:33:26 INFO  : System reset is completed.
+19:33:27 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:33:28 INFO  : ps7_init is completed.
+19:33:28 INFO  : ps7_post_config is completed.
+19:41:21 INFO  : System reset is completed.
+19:41:23 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:41:24 INFO  : ps7_init is completed.
+19:41:24 INFO  : ps7_post_config is completed.
+19:42:50 INFO  : System reset is completed.
+19:42:51 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:42:52 INFO  : ps7_init is completed.
+19:42:52 INFO  : ps7_post_config is completed.
+19:47:39 INFO  : System reset is completed.
+19:47:41 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:47:41 INFO  : ps7_init is completed.
+19:47:41 INFO  : ps7_post_config is completed.
+20:07:50 INFO  : System reset is completed.
+20:07:51 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:07:52 INFO  : ps7_init is completed.
+20:07:52 INFO  : ps7_post_config is completed.
+20:11:18 INFO  : System reset is completed.
+20:11:19 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:11:20 INFO  : ps7_init is completed.
+20:11:20 INFO  : ps7_post_config is completed.
+20:11:40 INFO  : System reset is completed.
+20:11:42 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:11:42 INFO  : ps7_init is completed.
+20:11:42 INFO  : ps7_post_config is completed.
+20:41:31 INFO  : System reset is completed.
+20:41:32 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:41:33 INFO  : ps7_init is completed.
+20:41:33 INFO  : ps7_post_config is completed.
+20:44:24 INFO  : System reset is completed.
+20:44:26 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:44:26 INFO  : ps7_init is completed.
+20:44:26 INFO  : ps7_post_config is completed.
+20:45:47 INFO  : System reset is completed.
+20:45:48 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:45:49 INFO  : ps7_init is completed.
+20:45:49 INFO  : ps7_post_config is completed.
+20:46:00 INFO  : System reset is completed.
+20:46:01 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:46:02 INFO  : ps7_init is completed.
+20:46:02 INFO  : ps7_post_config is completed.
+20:46:08 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+20:46:08 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+20:46:25 INFO  : System reset is completed.
+20:46:27 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:46:28 INFO  : ps7_init is completed.
+20:46:28 INFO  : ps7_post_config is completed.
+20:48:42 INFO  : System reset is completed.
+20:48:44 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:48:44 INFO  : ps7_init is completed.
+20:48:44 INFO  : ps7_post_config is completed.
+20:49:35 INFO  : System reset is completed.
+20:49:37 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:49:37 INFO  : ps7_init is completed.
+20:49:38 INFO  : ps7_post_config is completed.
+20:50:39 INFO  : System reset is completed.
+20:50:40 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:50:41 INFO  : ps7_init is completed.
+20:50:41 INFO  : ps7_post_config is completed.
+20:51:53 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:52:06 INFO  : Processing command line option -hwspec /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf.
+20:52:06 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+20:52:07 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+20:52:07 INFO  : XSDB server has started successfully.
+20:52:26 INFO  : System reset is completed.
+20:52:28 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:52:28 INFO  : ps7_init is completed.
+20:52:29 INFO  : ps7_post_config is completed.
+20:55:23 INFO  : System reset is completed.
+20:55:24 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:55:25 INFO  : ps7_init is completed.
+20:55:25 INFO  : ps7_post_config is completed.
+20:56:53 INFO  : BSP Project P/standalone_bsp_0 has been successfully migrated.
+20:58:45 ERROR :  No Ethernet MAC cores are addressable from processor ps7_cortexa9_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+ [Hsi 55-1545] Problem running tcl command ::sw_lwip141_v1_0::lwip_drc : ERROR: No Ethernet MAC cores are addressable from processor ps7_cortexa9_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+    while executing
+"error "ERROR: No Ethernet MAC cores are addressable from processor $cpuname.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_et..."
+    (procedure "::sw_lwip141_v1_0::lwip_drc" line 12)
+    invoked from within
+"::sw_lwip141_v1_0::lwip_drc lwip141"
+ [Hsi 55-1440] Error(s) while running DRCs.
+20:58:45 ERROR : Error generating bsp sources: Failed to generate BSP.
+20:58:45 ERROR : Failed to regenerate sources for BSP project standalone_bsp_0
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+20:58:48 INFO  : Refreshed build settings on project RTOSDemo
+20:59:32 INFO  : No changes in MSS file content so not generating sources.
+20:59:40 ERROR :  No Ethernet MAC cores are addressable from processor ps7_cortexa9_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+ [Hsi 55-1545] Problem running tcl command ::sw_lwip141_v1_0::lwip_drc : ERROR: No Ethernet MAC cores are addressable from processor ps7_cortexa9_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+    while executing
+"error "ERROR: No Ethernet MAC cores are addressable from processor $cpuname.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_et..."
+    (procedure "::sw_lwip141_v1_0::lwip_drc" line 12)
+    invoked from within
+"::sw_lwip141_v1_0::lwip_drc lwip141"
+ [Hsi 55-1440] Error(s) while running DRCs.
+20:59:40 ERROR : Error generating bsp sources: Failed to generate BSP.
+20:59:40 ERROR : Failed to regenerate sources for BSP project standalone_bsp_0
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+21:00:10 INFO  : Refreshed build settings on project RTOSDemo
+21:02:52 INFO  : System reset is completed.
+21:02:53 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:02:54 INFO  : ps7_init is completed.
+21:02:54 INFO  : ps7_post_config is completed.
+21:06:22 INFO  : System reset is completed.
+21:06:23 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:06:24 INFO  : ps7_init is completed.
+21:06:24 INFO  : ps7_post_config is completed.
+21:21:15 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433477979000,  Project:1433471310000
+21:21:15 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+21:21:15 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+21:21:19 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:21:21 INFO  : 
+21:21:22 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+21:21:22 INFO  : Clearing existing target manager status.
+21:21:22 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+21:21:22 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:21:40 INFO  : System reset is completed.
+21:21:42 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:21:42 INFO  : ps7_init is completed.
+21:21:43 INFO  : ps7_post_config is completed.
+21:36:46 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:36:48 INFO  : System reset is completed.
+21:36:50 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:36:50 INFO  : ps7_init is completed.
+21:36:50 INFO  : ps7_post_config is completed.
+21:37:33 INFO  : System reset is completed.
+21:37:34 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:37:35 INFO  : ps7_init is completed.
+21:37:35 INFO  : ps7_post_config is completed.
+21:42:33 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433479336000,  Project:1433477979000
+21:42:33 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+21:42:33 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+21:42:36 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:42:39 INFO  : 
+21:42:39 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+21:42:39 INFO  : Clearing existing target manager status.
+21:42:39 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:43:40 INFO  : System reset is completed.
+21:43:41 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:43:42 INFO  : ps7_init is completed.
+21:43:42 INFO  : ps7_post_config is completed.
+22:44:27 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433483047000,  Project:1433479336000
+22:44:27 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:44:27 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+22:44:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:44:34 INFO  : 
+22:44:35 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+22:44:35 INFO  : Clearing existing target manager status.
+22:44:35 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:44:50 INFO  : System reset is completed.
+22:44:51 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:44:52 INFO  : ps7_init is completed.
+22:44:52 INFO  : ps7_post_config is completed.
+22:52:28 INFO  : System reset is completed.
+22:52:29 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:52:30 INFO  : ps7_init is completed.
+22:52:30 INFO  : ps7_post_config is completed.
+22:57:11 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433483812000,  Project:1433483047000
+22:57:11 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:57:11 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+22:57:15 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:57:18 INFO  : 
+22:57:19 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+22:57:19 INFO  : Clearing existing target manager status.
+22:57:19 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:57:34 INFO  : System reset is completed.
+22:57:35 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:57:36 INFO  : ps7_init is completed.
+22:57:36 INFO  : ps7_post_config is completed.
+23:03:22 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433484180000,  Project:1433483812000
+23:03:22 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:03:22 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+23:03:26 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:03:28 INFO  : 
+23:03:29 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+23:03:29 INFO  : Clearing existing target manager status.
+23:03:29 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:03:41 INFO  : System reset is completed.
+23:03:43 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:03:43 INFO  : ps7_init is completed.
+23:03:43 INFO  : ps7_post_config is completed.
+23:28:35 INFO  : System reset is completed.
+23:28:36 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:28:37 INFO  : ps7_init is completed.
+23:28:37 INFO  : ps7_post_config is completed.
+23:55:11 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:25:36 INFO  : Processing command line option -hwspec /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:25:36 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:25:36 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:25:37 INFO  : XSDB server has started successfully.
+00:25:38 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433489112000,  Project:1433484180000
+00:25:38 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf.
+00:25:38 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+00:25:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:25:44 INFO  : 
+00:25:45 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+00:25:45 INFO  : Clearing existing target manager status.
+00:25:47 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:26:03 INFO  : System reset is completed.
+00:26:04 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:26:05 INFO  : ps7_init is completed.
+00:26:05 INFO  : ps7_post_config is completed.
+00:35:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433489743000,  Project:1433489112000
+00:35:57 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:35:57 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+00:36:01 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:36:03 INFO  : 
+00:36:04 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+00:36:04 INFO  : Clearing existing target manager status.
+00:36:04 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:36:20 INFO  : System reset is completed.
+00:36:21 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:36:22 INFO  : ps7_init is completed.
+00:36:22 INFO  : ps7_post_config is completed.
+00:51:52 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433490254000,  Project:1433489743000
+00:51:52 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:51:53 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+00:51:56 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:51:59 INFO  : 
+00:52:00 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+00:52:00 INFO  : Clearing existing target manager status.
+00:52:00 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:52:30 INFO  : System reset is completed.
+00:52:31 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:52:32 INFO  : ps7_init is completed.
+00:52:32 INFO  : ps7_post_config is completed.
+00:54:36 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+00:54:36 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+01:17:03 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433492209000,  Project:1433490254000
+01:17:03 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+01:17:03 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+01:17:06 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:17:09 INFO  : 
+01:17:10 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+01:17:10 INFO  : Clearing existing target manager status.
+01:17:10 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:17:26 INFO  : System reset is completed.
+01:17:28 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:17:28 INFO  : ps7_init is completed.
+01:17:28 INFO  : ps7_post_config is completed.
+01:18:03 INFO  : System reset is completed.
+01:18:05 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:18:05 INFO  : ps7_init is completed.
+01:18:05 INFO  : ps7_post_config is completed.
+01:19:03 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+01:19:03 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+01:26:45 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433492790000,  Project:1433492209000
+01:26:45 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+01:26:45 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+01:26:48 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:26:51 INFO  : 
+01:26:52 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+01:26:52 INFO  : Clearing existing target manager status.
+01:26:52 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:27:05 INFO  : System reset is completed.
+01:27:06 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:27:07 INFO  : ps7_init is completed.
+01:27:07 INFO  : ps7_post_config is completed.
+01:30:11 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+01:30:11 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+01:34:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433493212000,  Project:1433492790000
+01:34:31 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+01:34:31 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+01:34:34 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:34:37 INFO  : 
+01:34:37 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+01:34:37 INFO  : Clearing existing target manager status.
+01:34:37 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:34:49 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:481)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:433)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:670)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+01:35:22 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:35:35 INFO  : Processing command line option -hwspec /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf.
+01:35:36 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+01:35:36 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+01:35:37 INFO  : XSDB server has started successfully.
+01:35:47 INFO  : System reset is completed.
+01:35:48 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:35:49 INFO  : ps7_init is completed.
+01:35:49 INFO  : ps7_post_config is completed.
+01:59:17 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433494729000,  Project:1433493212000
+01:59:17 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+01:59:17 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+01:59:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:59:24 INFO  : 
+01:59:25 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+01:59:25 INFO  : Clearing existing target manager status.
+01:59:25 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:59:43 INFO  : System reset is completed.
+01:59:44 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:59:45 INFO  : ps7_init is completed.
+01:59:45 INFO  : ps7_post_config is completed.
+02:00:09 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+02:00:09 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+02:04:07 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433495027000,  Project:1433494729000
+02:04:07 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+02:04:07 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+02:04:10 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:04:13 INFO  : 
+02:04:14 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+02:04:14 INFO  : Clearing existing target manager status.
+02:04:14 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:04:43 INFO  : System reset is completed.
+02:04:44 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:04:45 INFO  : ps7_init is completed.
+02:04:45 INFO  : ps7_post_config is completed.
+02:05:05 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+02:05:05 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+02:09:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433495316000,  Project:1433495027000
+02:09:31 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+02:09:31 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+02:09:35 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:09:37 INFO  : 
+02:09:38 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+02:09:38 INFO  : Clearing existing target manager status.
+02:09:38 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:09:55 INFO  : System reset is completed.
+02:09:57 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:09:57 INFO  : ps7_init is completed.
+02:09:57 INFO  : ps7_post_config is completed.
+02:10:31 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+02:10:31 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+02:15:26 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433495705000,  Project:1433495316000
+02:15:26 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+02:15:26 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+02:15:29 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:15:32 INFO  : 
+02:15:33 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+02:15:33 INFO  : Clearing existing target manager status.
+02:15:33 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:15:45 INFO  : System reset is completed.
+02:15:46 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:15:47 INFO  : ps7_init is completed.
+02:15:47 INFO  : ps7_post_config is completed.
+02:16:07 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+02:16:07 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+02:20:08 INFO  : System reset is completed.
+02:20:10 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:20:10 INFO  : ps7_init is completed.
+02:20:10 INFO  : ps7_post_config is completed.
+02:20:26 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+02:20:26 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+02:24:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433496222000,  Project:1433495705000
+02:24:02 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+02:24:02 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+02:24:05 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:24:08 INFO  : 
+02:24:08 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+02:24:08 INFO  : Clearing existing target manager status.
+02:24:08 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:24:29 INFO  : System reset is completed.
+02:24:30 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:24:31 INFO  : ps7_init is completed.
+02:24:31 INFO  : ps7_post_config is completed.
+02:41:28 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433497267000,  Project:1433496222000
+02:41:28 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+02:41:28 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+02:41:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:41:34 INFO  : 
+02:41:35 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+02:41:35 INFO  : Clearing existing target manager status.
+02:41:35 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:41:50 INFO  : System reset is completed.
+02:41:54 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:41:57 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0xf8000008
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1073)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:483)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:670)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+02:42:04 INFO  : System reset is completed.
+02:42:05 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:42:06 INFO  : ps7_init is completed.
+02:42:06 INFO  : ps7_post_config is completed.
+02:46:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433497545000,  Project:1433497267000
+02:46:02 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+02:46:02 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+02:46:05 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:46:08 INFO  : 
+02:46:09 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+02:46:09 INFO  : Clearing existing target manager status.
+02:46:09 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:46:39 INFO  : System reset is completed.
+02:46:40 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:46:41 INFO  : ps7_init is completed.
+02:46:41 INFO  : ps7_post_config is completed.
+02:50:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433497835000,  Project:1433497545000
+02:50:46 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+02:50:46 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+02:50:50 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:50:53 INFO  : 
+02:50:53 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+02:50:53 INFO  : Clearing existing target manager status.
+02:50:53 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:51:05 INFO  : System reset is completed.
+02:51:07 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:51:08 INFO  : ps7_init is completed.
+02:51:08 INFO  : ps7_post_config is completed.
+03:16:58 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433499317000,  Project:1433497835000
+03:16:58 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+03:16:58 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+03:17:02 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:17:05 INFO  : 
+03:17:06 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+03:17:06 INFO  : Clearing existing target manager status.
+03:17:06 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:17:33 INFO  : System reset is completed.
+03:17:34 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:17:35 INFO  : ps7_init is completed.
+03:17:35 INFO  : ps7_post_config is completed.
+03:18:03 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+03:18:03 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+03:34:00 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433500427000,  Project:1433499317000
+03:34:00 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+03:34:00 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+03:34:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:34:06 INFO  : 
+03:34:07 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+03:34:07 INFO  : Clearing existing target manager status.
+03:34:07 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:34:18 INFO  : System reset is completed.
+03:34:20 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:34:20 INFO  : ps7_init is completed.
+03:34:20 INFO  : ps7_post_config is completed.
+03:35:00 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+03:35:00 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+03:39:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433500755000,  Project:1433500427000
+03:39:30 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+03:39:30 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+03:39:34 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:39:36 INFO  : 
+03:39:37 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+03:39:37 INFO  : Clearing existing target manager status.
+03:39:37 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:39:58 INFO  : System reset is completed.
+03:40:00 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:40:01 INFO  : ps7_init is completed.
+03:40:01 INFO  : ps7_post_config is completed.
+03:41:08 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+03:41:08 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+03:45:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433501140000,  Project:1433500755000
+03:45:50 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+03:45:50 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+03:45:54 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:45:57 INFO  : 
+03:45:57 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+03:45:57 INFO  : Clearing existing target manager status.
+03:45:57 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:46:09 INFO  : System reset is completed.
+03:46:10 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:46:11 INFO  : ps7_init is completed.
+03:46:11 INFO  : ps7_post_config is completed.
+03:47:33 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+03:47:33 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+03:51:00 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433501450000,  Project:1433501140000
+03:51:00 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+03:51:00 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+03:51:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:51:07 INFO  : 
+03:51:07 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+03:51:07 INFO  : Clearing existing target manager status.
+03:51:07 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:51:21 INFO  : System reset is completed.
+03:51:22 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:51:23 INFO  : ps7_init is completed.
+03:51:23 INFO  : ps7_post_config is completed.
+04:01:23 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433502068000,  Project:1433501450000
+04:01:23 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+04:01:23 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+04:01:27 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+04:01:30 INFO  : 
+04:01:31 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+04:01:31 INFO  : Clearing existing target manager status.
+04:01:31 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+04:01:59 INFO  : System reset is completed.
+04:02:01 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+04:02:01 INFO  : ps7_init is completed.
+04:02:01 INFO  : ps7_post_config is completed.
+04:03:57 INFO  : System reset is completed.
+04:03:59 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+04:03:59 INFO  : ps7_init is completed.
+04:03:59 INFO  : ps7_post_config is completed.
+04:04:24 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+04:04:24 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+04:10:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433502613000,  Project:1433502068000
+04:10:30 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+04:10:30 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+04:10:34 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+04:10:36 INFO  : 
+04:10:37 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+04:10:37 INFO  : Clearing existing target manager status.
+04:10:37 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+04:10:58 INFO  : System reset is completed.
+04:10:59 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+04:11:00 INFO  : ps7_init is completed.
+04:11:00 INFO  : ps7_post_config is completed.
+04:16:00 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433502944000,  Project:1433502613000
+04:16:00 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+04:16:00 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+04:16:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+04:16:06 INFO  : 
+04:16:07 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+04:16:07 INFO  : Clearing existing target manager status.
+04:16:07 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+04:16:45 INFO  : System reset is completed.
+04:16:47 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+04:16:47 INFO  : ps7_init is completed.
+04:16:48 INFO  : ps7_post_config is completed.
+04:37:28 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433504234000,  Project:1433502944000
+04:37:28 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+04:37:28 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+04:37:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+04:37:35 INFO  : 
+04:37:36 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+04:37:36 INFO  : Clearing existing target manager status.
+04:37:36 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+04:38:35 INFO  : System reset is completed.
+04:38:37 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+04:38:37 INFO  : ps7_init is completed.
+04:38:37 INFO  : ps7_post_config is completed.
+04:43:09 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433504579000,  Project:1433504234000
+04:43:09 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+04:43:09 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+04:43:13 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+04:43:16 INFO  : 
+04:43:17 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+04:43:17 INFO  : Clearing existing target manager status.
+04:43:17 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+04:43:33 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+04:43:33 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '64' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(TM.java:972)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:438)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:670)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+04:43:34 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+04:43:34 ERROR : Disconnect target failed.No active Target 64
+
+04:43:39 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(TM.java:972)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:438)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:670)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+04:43:39 ERROR : Disconnect target failed.No active Target 64
+
+04:43:57 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(TM.java:972)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:438)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:670)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+04:43:57 ERROR : Disconnect target failed.No active Target 64
+
+04:44:05 ERROR : Disconnect target failed.No active Target 64
+
+04:44:05 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: No active Target 64
+
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:327)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:306)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:210)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:60)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+04:44:05 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+04:44:26 INFO  : Processing command line option -hwspec /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf.
+04:44:27 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+04:44:27 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+04:44:28 INFO  : XSDB server has started successfully.
+04:44:37 INFO  : System reset is completed.
+04:44:39 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+04:44:39 INFO  : ps7_init is completed.
+04:44:40 INFO  : ps7_post_config is completed.
+05:02:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433505479000,  Project:1433504579000
+05:02:57 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+05:02:57 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+05:03:00 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+05:03:03 INFO  : 
+05:03:03 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+05:03:03 INFO  : Clearing existing target manager status.
+05:03:03 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+05:03:26 INFO  : System reset is completed.
+05:03:30 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:03:33 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0xf8000008
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1073)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:483)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:670)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+05:03:43 INFO  : System reset is completed.
+05:03:45 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:03:45 INFO  : ps7_init is completed.
+05:03:45 INFO  : ps7_post_config is completed.
+05:14:19 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433506449000,  Project:1433505479000
+05:14:19 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+05:14:19 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+05:14:23 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+05:14:26 INFO  : 
+05:14:26 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+05:14:26 INFO  : Clearing existing target manager status.
+05:14:26 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+05:14:54 INFO  : System reset is completed.
+05:14:55 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:14:56 INFO  : ps7_init is completed.
+05:14:56 INFO  : ps7_post_config is completed.
+05:15:20 INFO  : System reset is completed.
+05:15:21 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:15:22 INFO  : ps7_init is completed.
+05:15:22 INFO  : ps7_post_config is completed.
+05:20:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433506839000,  Project:1433506449000
+05:20:50 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+05:20:50 INFO  : Copied contents of /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+05:20:53 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+05:20:55 INFO  : 
+05:20:56 INFO  : Updating hardware inferred compiler options for RTOSDemo.
+05:20:56 INFO  : Clearing existing target manager status.
+05:20:56 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+05:21:12 INFO  : System reset is completed.
+05:21:13 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:21:14 INFO  : ps7_init is completed.
+05:21:14 INFO  : ps7_post_config is completed.
+05:24:20 INFO  : Invoking Bootgen: bootgen -image RTOSDemo.bif -o /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/bootimage/BOOT.bin
+05:24:20 INFO  : Creating new bif file /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/bootimage/RTOSDemo.bif
+05:24:20 INFO  : Bootgen command execution is done.
+05:26:29 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+05:26:29 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+05:49:35 INFO  : System reset is completed.
+05:49:36 INFO  : FPGA configured successfully with bitstream "/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:49:37 INFO  : ps7_init is completed.
+05:49:37 INFO  : ps7_post_config is completed.
+05:50:35 INFO  : Invoking Bootgen: bootgen -image RTOSDemo.bif -o /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/FreeRTOSV8.2.1/FreeRTOS/Demo/CORTEX_A9_Zynq_ZC702/RTOSDemo/bootimage/BOOT.bin -w on
+05:50:35 INFO  : Bootgen command execution is done.

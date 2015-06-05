@@ -9,16 +9,6 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/radspwi/subdir.mk
--include src/lwIP_Demo/lwip-1.4.0/src/netif/subdir.mk
--include src/lwIP_Demo/lwip-1.4.0/src/core/ipv4/subdir.mk
--include src/lwIP_Demo/lwip-1.4.0/src/core/subdir.mk
--include src/lwIP_Demo/lwip-1.4.0/src/api/subdir.mk
--include src/lwIP_Demo/lwIP_port/netif/subdir.mk
--include src/lwIP_Demo/lwIP_port/subdir.mk
--include src/lwIP_Demo/lwIP_Apps/apps/httpserver_raw_from_lwIP_download/subdir.mk
--include src/lwIP_Demo/lwIP_Apps/apps/BasicSocketCommandServer/subdir.mk
--include src/lwIP_Demo/lwIP_Apps/subdir.mk
--include src/lwIP_Demo/subdir.mk
 -include src/Full_Demo/Standard-Demo-Tasks/Minimal/subdir.mk
 -include src/Full_Demo/FreeRTOS-Plus-CLI/subdir.mk
 -include src/Full_Demo/subdir.mk
@@ -53,7 +43,7 @@ all: RTOSDemo.elf secondary-outputs
 RTOSDemo.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM gcc linker'
-	arm-xilinx-eabi-gcc -Xlinker --gc-sections -Wl,-T -Wl,../src/lscript.ld -L/home/nolan/Documents/Vivado/project_1/project_1.sdk/RTOSDemo_bsp/ps7_cortexa9_0/lib -o "RTOSDemo.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-xilinx-eabi-gcc -Xlinker --gc-sections -Wl,-T -Wl,../src/lscript.ld -L/home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/standalone_bsp_0/ps7_cortexa9_0/lib -o "RTOSDemo.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -2,9 +2,9 @@
 # Vivado v2015.1 (64-bit)
 # SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
 # IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
-# Start of session at: Mon Jun  1 15:57:04 2015
-# Process ID: 6728
-# Log file: /home/nolan/Documents/Vivado/ac_interface/ac_interface.runs/synth_1/ac_interface.vds
-# Journal file: /home/nolan/Documents/Vivado/ac_interface/ac_interface.runs/synth_1/vivado.jou
+# Start of session at: Fri Jun  5 01:13:01 2015
+# Process ID: 28874
+# Log file: /home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.runs/synth_1/ac_interface.vds
+# Journal file: /home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source ac_interface.tcl -notrace

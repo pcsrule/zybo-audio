@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
-# Webtalk v2014.4 (64-bit)
-# SW Build 1071353 on Tue Nov 18 16:48:31 MST 2014
+# Webtalk v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:19:00 MDT 2015
 # 
-# Start of session at: Thu Apr  2 11:37:50 2015
-# Process ID: 15628
-# Log file: /home/nolan/Documents/Vivado/project_1/project_1.sdk/webtalk/webtalk.log
-# Journal file: /home/nolan/Documents/Vivado/project_1/project_1.sdk/webtalk/webtalk.jou
+# Start of session at: Thu Jun  4 23:55:11 2015
+# Process ID: 13974
+# Log file: /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/webtalk/webtalk.log
+# Journal file: /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.sdk/webtalk/webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

@@ -44,21 +44,20 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
   debug::add_scope template.lib 1
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir /home/nolan/Documents/Vivado/ac_interface/ac_interface.cache/wt [current_project]
-  set_property parent.project_path /home/nolan/Documents/Vivado/ac_interface/ac_interface.xpr [current_project]
+  set_property webtalk.parent_dir /home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.cache/wt [current_project]
+  set_property parent.project_path /home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.xpr [current_project]
   set_property ip_repo_paths {
-  /home/nolan/Documents/Vivado/ac_interface/ac_interface.cache/ip
-  /home/nolan/Documents/Vivado/ac_interface/ac_interface.srcs/sources_1/new
+  /home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.cache/ip
+  /home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new
 } [current_project]
-  set_property ip_output_repo /home/nolan/Documents/Vivado/ac_interface/ac_interface.cache/ip [current_project]
-  add_files -quiet /home/nolan/Documents/Vivado/ac_interface/ac_interface.runs/synth_1/ac_interface.dcp
+  set_property ip_output_repo /home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.cache/ip [current_project]
+  add_files -quiet /home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.runs/synth_1/ac_interface.dcp
   link_design -top ac_interface -part xc7z010clg400-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -120,19 +119,5 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-}
-
-start_step write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  write_bitstream -force ac_interface.bit 
-  catch { write_sysdef -hwdef ac_interface.hwdef -bitfile ac_interface.bit -meminfo ac_interface.mmi -ltxfile debug_nets.ltx -file ac_interface.sysdef }
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
 }
 

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: Nolan:user:ac_interface:1.1
-// IP Revision: 9
+// IP Revision: 17
 
 (* X_CORE_INFO = "ac_interface,Vivado 2015.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_ac_interface_0_1,ac_interface,{}" *)
@@ -61,7 +61,10 @@ module design_1_ac_interface_0_1 (
   AC_RECDAT,
   AC_MUTEN,
   mclk,
-  reset
+  reset,
+  rec_parallel,
+  play_parallel,
+  led
 );
 
 output wire AC_BCLK;
@@ -72,6 +75,9 @@ input wire AC_RECDAT;
 output wire AC_MUTEN;
 input wire mclk;
 input wire reset;
+output wire [31 : 0] rec_parallel;
+input wire [31 : 0] play_parallel;
+output wire [3 : 0] led;
 
   ac_interface inst (
     .AC_BCLK(AC_BCLK),
@@ -81,6 +87,9 @@ input wire reset;
     .AC_RECDAT(AC_RECDAT),
     .AC_MUTEN(AC_MUTEN),
     .mclk(mclk),
-    .reset(reset)
+    .reset(reset),
+    .rec_parallel(rec_parallel),
+    .play_parallel(play_parallel),
+    .led(led)
   );
 endmodule

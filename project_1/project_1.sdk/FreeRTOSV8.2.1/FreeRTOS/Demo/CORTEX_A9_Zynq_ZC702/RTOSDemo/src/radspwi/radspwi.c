@@ -90,16 +90,16 @@ static void AudioInitialize(void *pvParameters) {
 	 */
 	Status = AudioRegSet(&Iic, 15, 0b000000000); //Perform Reset
 	vTaskDelay(75);
-	Status |= AudioRegSet(&Iic, 6, 0b000110001); //Power up
+	Status |= AudioRegSet(&Iic, 6, 0b000110000); //Power up
 	Status |= AudioRegSet(&Iic, 0, 0b100010111); //Unmute left and right input
 	Status |= AudioRegSet(&Iic, 2, 0b101111001); //unmute headphone output
-	Status |= AudioRegSet(&Iic, 4, 0b000110100); //set up audio routing
-	Status |= AudioRegSet(&Iic, 5, 0b000000000); //filtering options
+	Status |= AudioRegSet(&Iic, 4, 0b000010100); //set up audio routing
+	Status |= AudioRegSet(&Iic, 5, 0b000000110); //filtering options
 	Status |= AudioRegSet(&Iic, 7, 0b000001010); //set 24-bit word and i2s
 	Status |= AudioRegSet(&Iic, 8, 0b000000000); //clock modes
 	vTaskDelay(75);
 	Status |= AudioRegSet(&Iic, 9, 0b000000001); //set active
-	Status |= AudioRegSet(&Iic, 6, 0b000100001); //enable output
+	Status |= AudioRegSet(&Iic, 6, 0b000100000); //enable output
 
 	if (Status != XST_SUCCESS)
 		xil_printf("codec configuration failed\r\n");

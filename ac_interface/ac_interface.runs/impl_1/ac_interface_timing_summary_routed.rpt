@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-| Date         : Mon Jun  1 15:57:44 2015
+| Date         : Fri Jun  5 01:13:41 2015
 | Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file ac_interface_timing_summary_routed.rpt -rpx ac_interface_timing_summary_routed.rpx
 | Design       : ac_interface
@@ -50,11 +50,29 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 2 register/latch pins with no clock driven by root clock pin: mclk (HIGH)
+ There are 9 register/latch pins with no clock driven by root clock pin: mclk (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: reset (HIGH)
+ There are 9 register/latch pins with no clock driven by root clock pin: reset (HIGH)
 
- There are 6 register/latch pins with no clock driven by root clock pin: AC_BCLK_reg/C (HIGH)
+ There are 115 register/latch pins with no clock driven by root clock pin: AC_BCLK_reg/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: AC_LRCLK_reg/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: lrclkDivCounter_reg[0]/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: lrclkDivCounter_reg[1]/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: lrclkDivCounter_reg[2]/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: lrclkDivCounter_reg[3]/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: lrclkDivCounter_reg[4]/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: lrclkDivCounter_reg[5]/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: lrclkDivCounter_reg[6]/C (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: lrclkDivCounter_reg[7]/C (HIGH)
 
 
 2. checking constant_clock
@@ -69,21 +87,21 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 8 pins that are not constrained for maximum delay. (HIGH)
+ There are 252 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 2 input ports with no input delay specified. (HIGH)
+ There are 3 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
 6. checking no_output_delay
 ---------------------------
- There are 3 ports with no output delay specified. (HIGH)
+ There are 5 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 

@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-| Date         : Mon Jun  1 15:57:35 2015
+| Date         : Fri Jun  5 01:13:32 2015
 | Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
 | Command      : report_control_sets -verbose -file ac_interface_control_sets_placed.rpt
 | Design       : ac_interface
@@ -22,8 +22,8 @@ Table of Contents
 +-------------------------------------------------------------------+-------+
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
-| Number of unique control sets                                     |     2 |
-| Minimum Number of register sites lost to control set restrictions |     8 |
+| Number of unique control sets                                     |     8 |
+| Minimum Number of register sites lost to control set restrictions |    20 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               8 |            3 |
+| No           | No                    | No                     |              44 |           13 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |              72 |           16 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -45,11 +45,17 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------+---------------+------------------+------------------+----------------+
-|        Clock Signal        | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------------------+---------------+------------------+------------------+----------------+
-|  bclkDivCounter[0]_i_2_n_0 |               |                  |                1 |              2 |
-|  AC_BCLK_OBUF              |               |                  |                2 |              6 |
-+----------------------------+---------------+------------------+------------------+----------------+
++--------------------+-------------------------+---------------------------+------------------+----------------+
+|    Clock Signal    |      Enable Signal      |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++--------------------+-------------------------+---------------------------+------------------+----------------+
+| ~AC_BCLK_OBUF_BUFG |                         |                           |                1 |              1 |
+|  mclk_internal     |                         |                           |                2 |              9 |
+|  AC_BCLK_OBUF_BUFG |                         |                           |                3 |             10 |
+|  AC_BCLK_OBUF_BUFG | receive/lrclk_nedge     |                           |                5 |             24 |
+|  AC_BCLK_OBUF_BUFG | receive/p_0_in          |                           |                6 |             24 |
+| ~AC_BCLK_OBUF_BUFG | i2s_tx/left[23]_i_1_n_0 |                           |                5 |             24 |
+| ~frame_sync_OBUF   |                         |                           |                7 |             24 |
+| ~AC_BCLK_OBUF_BUFG |                         | i2s_tx/bit_cnt[0]_i_1_n_0 |                8 |             32 |
++--------------------+-------------------------+---------------------------+------------------+----------------+
 
 

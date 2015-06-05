@@ -234,7 +234,7 @@ XScuGic_Config *pxGICConfig;
 	( void ) xStatus; /* Remove compiler warning if configASSERT() is not defined. */
 
 	/* Initialise the LED port. */
-	vParTestInitialise();
+	//vParTestInitialise();
 
 	/* The Xilinx projects use a BSP that do not allow the start up code to be
 	altered easily.  Therefore the vector table used by FreeRTOS is defined in

@@ -18,16 +18,6 @@ ELFSIZE :=
 SUBDIRS := \
 src/radspwi \
 src \
-src/lwIP_Demo \
-src/lwIP_Demo/lwip-1.4.0/src/netif \
-src/lwIP_Demo/lwip-1.4.0/src/core \
-src/lwIP_Demo/lwip-1.4.0/src/core/ipv4 \
-src/lwIP_Demo/lwip-1.4.0/src/api \
-src/lwIP_Demo/lwIP_port \
-src/lwIP_Demo/lwIP_port/netif \
-src/lwIP_Demo/lwIP_Apps \
-src/lwIP_Demo/lwIP_Apps/apps/httpserver_raw_from_lwIP_download \
-src/lwIP_Demo/lwIP_Apps/apps/BasicSocketCommandServer \
 src/Full_Demo \
 src/Full_Demo/Standard-Demo-Tasks/Minimal \
 src/Full_Demo/FreeRTOS-Plus-CLI \

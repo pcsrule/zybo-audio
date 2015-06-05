@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Mon Jun  1 16:23:15 2015
+//Date        : Fri Jun  5 05:18:10 2015
 //Host        : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -38,6 +38,7 @@ module design_1_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    button,
     iic_0_scl_io,
     iic_0_sda_io,
     led_tri_o);
@@ -69,6 +70,7 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  input button;
   inout iic_0_scl_io;
   inout iic_0_sda_io;
   output [3:0]led_tri_o;
@@ -101,6 +103,7 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire button;
   wire iic_0_scl_i;
   wire iic_0_scl_io;
   wire iic_0_scl_o;
@@ -146,7 +149,8 @@ module design_1_wrapper
         .IIC_0_sda_i(iic_0_sda_i),
         .IIC_0_sda_o(iic_0_sda_o),
         .IIC_0_sda_t(iic_0_sda_t),
-        .LED_tri_o(led_tri_o));
+        .button(button),
+        .led_tri_o(led_tri_o));
   IOBUF iic_0_scl_iobuf
        (.I(iic_0_scl_o),
         .IO(iic_0_scl_io),

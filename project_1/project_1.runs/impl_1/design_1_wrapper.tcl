@@ -50,26 +50,24 @@ set rc [catch {
   create_msg_db init_design.pb
   debug::add_scope template.lib 1
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir /home/nolan/Documents/Vivado/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path /home/nolan/Documents/Vivado/project_1/project_1.xpr [current_project]
+  set_property webtalk.parent_dir /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.cache/wt [current_project]
+  set_property parent.project_path /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.xpr [current_project]
   set_property ip_repo_paths {
-  /home/nolan/Documents/Vivado/project_1/project_1.cache/ip
-  /home/nolan/Documents/Vivado/i2c_interface
-  /home/nolan/Documents/Vivado/ac_interface
+  /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.cache/ip
+  /home/nolan/Documents/new_vivado/radspwi/i2c_interface
+  /home/nolan/Documents/new_vivado/radspwi/ac_interface
 } [current_project]
-  set_property ip_output_repo /home/nolan/Documents/Vivado/project_1/project_1.cache/ip [current_project]
-  add_files -quiet /home/nolan/Documents/Vivado/project_1/project_1.runs/synth_1/design_1_wrapper.dcp
-  read_xdc -ref design_1_processing_system7_0_0 -cells inst /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
-  set_property processing_order EARLY [get_files /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_1_rst_processing_system7_0_100M_0 /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc
-  set_property processing_order EARLY [get_files /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
-  read_xdc -ref design_1_rst_processing_system7_0_100M_0 /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc
-  set_property processing_order EARLY [get_files /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_1_axi_gpio_0_0 -cells U0 /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc
-  set_property processing_order EARLY [get_files /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
-  read_xdc -ref design_1_axi_gpio_0_0 -cells U0 /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc
-  set_property processing_order EARLY [get_files /home/nolan/Documents/Vivado/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
-  read_xdc /home/nolan/Documents/Vivado/project_1/project_1.srcs/constrs_1/imports/Downloads/ZYBO_Master.xdc
+  set_property ip_output_repo /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.cache/ip [current_project]
+  add_files -quiet /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.runs/synth_1/design_1_wrapper.dcp
+  read_xdc -ref design_1_processing_system7_0_0 -cells inst /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
+  set_property processing_order EARLY [get_files /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_1_rst_processing_system7_0_100M_0 /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc
+  set_property processing_order EARLY [get_files /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
+  read_xdc -ref design_1_rst_processing_system7_0_100M_0 /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc
+  set_property processing_order EARLY [get_files /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
+  read_xdc -ref design_1_fifo_generator_0_0 -cells U0 /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0.xdc
+  set_property processing_order EARLY [get_files /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0.xdc]
+  read_xdc /home/nolan/Documents/new_vivado/radspwi/project_1/project_1.srcs/constrs_1/imports/Downloads/ZYBO_Master.xdc
   link_design -top design_1_wrapper -part xc7z010clg400-1
   close_msg_db -file init_design.pb
 } RESULT]
