@@ -657,9 +657,9 @@ unsigned long ps7_ddr_init_data_3_0[] = {
     // .. .. reg_ddrc_burst_rdwr = 0x4
     // .. .. ==> 0XF8006034[3:0] = 0x00000004U
     // .. ..     ==> MASK : 0x0000000FU    VAL : 0x00000004U
-    // .. .. reg_ddrc_pre_cke_x1024 = 0x101
-    // .. .. ==> 0XF8006034[13:4] = 0x00000101U
-    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x00001010U
+    // .. .. reg_ddrc_pre_cke_x1024 = 0x167
+    // .. .. ==> 0XF8006034[13:4] = 0x00000167U
+    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x00001670U
     // .. .. reg_ddrc_post_cke_x1024 = 0x1
     // .. .. ==> 0XF8006034[25:16] = 0x00000001U
     // .. ..     ==> MASK : 0x03FF0000U    VAL : 0x00010000U
@@ -667,7 +667,7 @@ unsigned long ps7_ddr_init_data_3_0[] = {
     // .. .. ==> 0XF8006034[28:28] = 0x00000000U
     // .. ..     ==> MASK : 0x10000000U    VAL : 0x00000000U
     // .. .. 
-    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x00011014U),
+    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x00011674U),
     // .. .. reg_ddrc_force_low_pri_n = 0x0
     // .. .. ==> 0XF8006038[0:0] = 0x00000000U
     // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000000U
@@ -4787,9 +4787,9 @@ unsigned long ps7_ddr_init_data_2_0[] = {
     // .. .. reg_ddrc_burst_rdwr = 0x4
     // .. .. ==> 0XF8006034[3:0] = 0x00000004U
     // .. ..     ==> MASK : 0x0000000FU    VAL : 0x00000004U
-    // .. .. reg_ddrc_pre_cke_x1024 = 0x101
-    // .. .. ==> 0XF8006034[13:4] = 0x00000101U
-    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x00001010U
+    // .. .. reg_ddrc_pre_cke_x1024 = 0x167
+    // .. .. ==> 0XF8006034[13:4] = 0x00000167U
+    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x00001670U
     // .. .. reg_ddrc_post_cke_x1024 = 0x1
     // .. .. ==> 0XF8006034[25:16] = 0x00000001U
     // .. ..     ==> MASK : 0x03FF0000U    VAL : 0x00010000U
@@ -4797,7 +4797,7 @@ unsigned long ps7_ddr_init_data_2_0[] = {
     // .. .. ==> 0XF8006034[28:28] = 0x00000000U
     // .. ..     ==> MASK : 0x10000000U    VAL : 0x00000000U
     // .. .. 
-    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x00011014U),
+    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x00011674U),
     // .. .. reg_ddrc_force_low_pri_n = 0x0
     // .. .. ==> 0XF8006038[0:0] = 0x00000000U
     // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000000U
@@ -9052,9 +9052,9 @@ unsigned long ps7_ddr_init_data_1_0[] = {
     // .. .. reg_ddrc_burst_rdwr = 0x4
     // .. .. ==> 0XF8006034[3:0] = 0x00000004U
     // .. ..     ==> MASK : 0x0000000FU    VAL : 0x00000004U
-    // .. .. reg_ddrc_pre_cke_x1024 = 0x101
-    // .. .. ==> 0XF8006034[13:4] = 0x00000101U
-    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x00001010U
+    // .. .. reg_ddrc_pre_cke_x1024 = 0x167
+    // .. .. ==> 0XF8006034[13:4] = 0x00000167U
+    // .. ..     ==> MASK : 0x00003FF0U    VAL : 0x00001670U
     // .. .. reg_ddrc_post_cke_x1024 = 0x1
     // .. .. ==> 0XF8006034[25:16] = 0x00000001U
     // .. ..     ==> MASK : 0x03FF0000U    VAL : 0x00010000U
@@ -9062,7 +9062,7 @@ unsigned long ps7_ddr_init_data_1_0[] = {
     // .. .. ==> 0XF8006034[28:28] = 0x00000000U
     // .. ..     ==> MASK : 0x10000000U    VAL : 0x00000000U
     // .. .. 
-    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x00011014U),
+    EMIT_MASKWRITE(0XF8006034, 0x13FF3FFFU ,0x00011674U),
     // .. .. reg_ddrc_force_low_pri_n = 0x0
     // .. .. ==> 0XF8006038[0:0] = 0x00000000U
     // .. ..     ==> MASK : 0x00000001U    VAL : 0x00000000U
@@ -12627,7 +12627,7 @@ ps7GetSiliconVersion () {
 }
 
 void mask_write (unsigned long add , unsigned long  mask, unsigned long val ) {
-        unsigned long *addr = (unsigned long*) add;
+        volatile unsigned long *addr = (volatile unsigned long*) add;
         *addr = ( val & mask ) | ( *addr & ~mask);
         //xil_printf("MaskWrite : 0x%x--> 0x%x \n \r" ,add, *addr);
 }
@@ -12647,7 +12647,7 @@ int mask_poll(unsigned long add , unsigned long mask ) {
 }
 
 unsigned long mask_read(unsigned long add , unsigned long mask ) {
-        unsigned long *addr = (unsigned long*) add;
+        volatile unsigned long *addr = (volatile unsigned long*) add;
         unsigned long val = (*addr & mask);
         //xil_printf("MaskRead : 0x%x --> 0x%x \n \r" , add, val);
         return val;

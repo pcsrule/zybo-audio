@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1433506691">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1451530741">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="design_1_wrapper.vdi"/>
   <File Type="BG-DRC" Name="design_1_wrapper.drc"/>
@@ -27,9 +27,12 @@
   <File Type="ROUTE-DRC-PB" Name="design_1_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-DRC" Name="design_1_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DCP" Name="design_1_wrapper_routed.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="design_1_wrapper_timing_summary_physopted.rpt"/>
   <File Type="PHYSOPT-DRC" Name="design_1_wrapper_drc_physopted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="design_1_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="design_1_wrapper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="design_1_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="design_1_wrapper_timing_summary_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="design_1_wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="design_1_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-CTRL" Name="design_1_wrapper_control_sets_placed.rpt"/>
@@ -38,11 +41,14 @@
   <File Type="PLACE-CLK" Name="design_1_wrapper_clock_utilization_placed.rpt"/>
   <File Type="PLACE-IO" Name="design_1_wrapper_io_placed.rpt"/>
   <File Type="PLACE-DCP" Name="design_1_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="design_1_wrapper_timing_summary_pwropted.rpt"/>
   <File Type="PWROPT-DRC" Name="design_1_wrapper_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="design_1_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="design_1_wrapper_timing_summary_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="design_1_wrapper.hwdef"/>
   <File Type="OPT-DRC" Name="design_1_wrapper_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="design_1_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="design_1_wrapper_timing_summary_init.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="design_1_wrapper_timing_summary_postroute_physopted.pb"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>

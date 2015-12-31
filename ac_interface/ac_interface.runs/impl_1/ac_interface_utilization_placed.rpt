@@ -1,11 +1,11 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-| Date         : Fri Jun  5 01:13:32 2015
-| Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Dec 30 18:56:15 2015
+| Host         : nolan-desktop running 64-bit Fedora release 23 (Twenty Three)
 | Command      : report_utilization -file ac_interface_utilization_placed.rpt -pb ac_interface_utilization_placed.pb
 | Design       : ac_interface
-| Device       : xc7z010
+| Device       : 7z010clg400-1
 | Design State : Fully Placed
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs              |   38 |     0 |     17600 |  0.22 |
-|   LUT as Logic          |   38 |     0 |     17600 |  0.22 |
+| Slice LUTs              |   72 |     0 |     17600 |  0.41 |
+|   LUT as Logic          |   72 |     0 |     17600 |  0.41 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
-| Slice Registers         |  148 |     0 |     35200 |  0.42 |
-|   Register as Flip Flop |  148 |     0 |     35200 |  0.42 |
+| Slice Registers         |  180 |     0 |     35200 |  0.51 |
+|   Register as Flip Flop |  180 |     0 |     35200 |  0.51 |
 |   Register as Latch     |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                |    1 |     0 |      8800 |  0.01 |
 | F8 Muxes                |    0 |     0 |      4400 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 1     |          Yes |         Set |            - |
-| 147   |          Yes |       Reset |            - |
+| 179   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -67,20 +67,20 @@ Table of Contents
 +-------------------------------------------------------------+----------+-------+-----------+-------+
 |                          Site Type                          |   Used   | Fixed | Available | Util% |
 +-------------------------------------------------------------+----------+-------+-----------+-------+
-| Slice                                                       |       39 |     0 |      4400 |  0.89 |
-|   SLICEL                                                    |       30 |     0 |           |       |
-|   SLICEM                                                    |        9 |     0 |           |       |
-| LUT as Logic                                                |       38 |     0 |     17600 |  0.22 |
+| Slice                                                       |       48 |     0 |      4400 |  1.09 |
+|   SLICEL                                                    |       37 |     0 |           |       |
+|   SLICEM                                                    |       11 |     0 |           |       |
+| LUT as Logic                                                |       72 |     0 |     17600 |  0.41 |
 |   using O5 output only                                      |        0 |       |           |       |
-|   using O6 output only                                      |       28 |       |           |       |
-|   using O5 and O6                                           |       10 |       |           |       |
+|   using O6 output only                                      |       61 |       |           |       |
+|   using O5 and O6                                           |       11 |       |           |       |
 | LUT as Memory                                               |        0 |     0 |      6000 |  0.00 |
 |   LUT as Distributed RAM                                    |        0 |     0 |           |       |
 |   LUT as Shift Register                                     |        0 |     0 |           |       |
-| LUT Flip Flop Pairs                                         |      123 |     0 |     17600 |  0.70 |
-|   fully used LUT-FF pairs                                   |       29 |       |           |       |
-|   LUT-FF pairs with unused LUT                              |       85 |       |           |       |
-|   LUT-FF pairs with unused Flip Flop                        |        9 |       |           |       |
+| LUT Flip Flop Pairs                                         |      162 |     0 |     17600 |  0.92 |
+|   fully used LUT-FF pairs                                   |       55 |       |           |       |
+|   LUT-FF pairs with unused LUT                              |       90 |       |           |       |
+|   LUT-FF pairs with unused Flip Flop                        |       17 |       |           |       |
 | Unique Control Sets                                         |        8 |       |           |       |
 | Minimum number of registers lost to control set restriction | 20(Lost) |       |           |       |
 +-------------------------------------------------------------+----------+-------+-----------+-------+
@@ -115,9 +115,9 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    9 |     0 |       100 |  9.00 |
-|   IOB Master Pads           |    4 |       |           |       |
-|   IOB Slave Pads            |    4 |       |           |       |
+| Bonded IOB                  |   71 |     0 |       100 | 71.00 |
+|   IOB Master Pads           |   34 |       |           |       |
+|   IOB Slave Pads            |   35 |       |           |       |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         2 |  0.00 |
@@ -140,7 +140,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
+| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
 | BUFIO      |    0 |     0 |         8 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         2 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         2 |  0.00 |
@@ -173,19 +173,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  147 |        Flop & Latch |
-| LUT6     |   14 |                 LUT |
+| FDRE     |  179 |        Flop & Latch |
+| OBUF     |   38 |                  IO |
+| LUT2     |   36 |                 LUT |
+| IBUF     |   33 |                  IO |
+| LUT6     |   16 |                 LUT |
+| CARRY4   |   16 |          CarryLogic |
 | LUT4     |   13 |                 LUT |
-| CARRY4   |    8 |          CarryLogic |
 | LUT3     |    7 |                 LUT |
-| OBUF     |    6 |                  IO |
 | LUT5     |    6 |                 LUT |
-| LUT2     |    4 |                 LUT |
-| LUT1     |    4 |                 LUT |
-| IBUF     |    3 |                  IO |
+| LUT1     |    5 |                 LUT |
+| BUFG     |    2 |               Clock |
 | MUXF7    |    1 |               MuxFx |
 | FDSE     |    1 |        Flop & Latch |
-| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 

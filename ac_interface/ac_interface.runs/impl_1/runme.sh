@@ -7,20 +7,20 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/opt/Xilinx/SDK/2015.1/bin:/opt/Xilinx/Vivado/2015.1/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2015.1/bin
+  PATH=/opt/Xilinx/SDK/2015.4/bin:/opt/Xilinx/Vivado/2015.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2015.4/bin
 else
-  PATH=/opt/Xilinx/SDK/2015.1/bin:/opt/Xilinx/Vivado/2015.1/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2015.1/bin:$PATH
+  PATH=/opt/Xilinx/SDK/2015.4/bin:/opt/Xilinx/Vivado/2015.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2015.4/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2015.1/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2015.4/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2015.1/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2015.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD=`dirname "$0"`
+HD_PWD='/home/nolan/Documents/VivadoProjects/zybo-audio/ac_interface/ac_interface.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

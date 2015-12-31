@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:proc_sys_reset:5.0
--- IP Revision: 7
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY proc_sys_reset_v5_0;
-USE proc_sys_reset_v5_0.proc_sys_reset;
+LIBRARY proc_sys_reset_v5_0_8;
+USE proc_sys_reset_v5_0_8.proc_sys_reset;
 
 ENTITY design_1_rst_processing_system7_0_100M_0 IS
   PORT (
@@ -101,11 +101,11 @@ ARCHITECTURE design_1_rst_processing_system7_0_100M_0_arch OF design_1_rst_proce
     );
   END COMPONENT proc_sys_reset;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF design_1_rst_processing_system7_0_100M_0_arch: ARCHITECTURE IS "proc_sys_reset,Vivado 2015.1";
+  ATTRIBUTE X_CORE_INFO OF design_1_rst_processing_system7_0_100M_0_arch: ARCHITECTURE IS "proc_sys_reset,Vivado 2015.4";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_rst_processing_system7_0_100M_0_arch : ARCHITECTURE IS "design_1_rst_processing_system7_0_100M_0,proc_sys_reset,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_rst_processing_system7_0_100M_0_arch: ARCHITECTURE IS "design_1_rst_processing_system7_0_100M_0,proc_sys_reset,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=proc_sys_reset,x_ipVersion=5.0,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_EXT_RST_WIDTH=4,C_AUX_RST_WIDTH=4,C_EXT_RESET_HIGH=0,C_AUX_RESET_HIGH=0,C_NUM_BUS_RST=1,C_NUM_PERP_RST=1,C_NUM_INTERCONNECT_ARESETN=1,C_NUM_PERP_ARESETN=1}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_rst_processing_system7_0_100M_0_arch: ARCHITECTURE IS "design_1_rst_processing_system7_0_100M_0,proc_sys_reset,{x_ipProduct=Vivado 2015.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=proc_sys_reset,x_ipVersion=5.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_EXT_RST_WIDTH=4,C_AUX_RST_WIDTH=4,C_EXT_RESET_HIGH=0,C_AUX_RESET_HIGH=0,C_NUM_BUS_RST=1,C_NUM_PERP_RST=1,C_NUM_INTERCONNECT_ARESETN=1,C_NUM_PERP_ARESETN=1}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF slowest_sync_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clock CLK";
   ATTRIBUTE X_INTERFACE_INFO OF ext_reset_in: SIGNAL IS "xilinx.com:signal:reset:1.0 ext_reset RST";

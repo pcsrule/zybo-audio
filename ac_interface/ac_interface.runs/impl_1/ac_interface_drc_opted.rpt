@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-| Date         : Fri Jun  5 01:13:31 2015
-| Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Dec 30 18:56:14 2015
+| Host         : nolan-desktop running 64-bit Fedora release 23 (Twenty Three)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
 
@@ -20,39 +20,28 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 5
+             Violations found: 4
 
 2. REPORT DETAILS
 -----------------
 NSTD-1#1 Critical Warning
 Unspecified I/O Standard  
-9 out of 9 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: led[0], AC_BCLK, AC_LRCLK, frame_sync, AC_PBDAT, AC_RECDAT, AC_MUTEN, mclk, reset.
+71 out of 71 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: rec_parallel[31:0], play_parallel[31], play_parallel[30], play_parallel[29], play_parallel[28], play_parallel[27], play_parallel[26], play_parallel[25], play_parallel[24], play_parallel[23], play_parallel[22], play_parallel[21], play_parallel[20], play_parallel[19], play_parallel[18] (the first 15 of 40 listed).
 Related violations: <none>
 
 UCIO-1#1 Critical Warning
 Unconstrained Logical Port  
-9 out of 9 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: led[0], AC_BCLK, AC_LRCLK, frame_sync, AC_PBDAT, AC_RECDAT, AC_MUTEN, mclk, reset.
+71 out of 71 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: rec_parallel[31:0], play_parallel[31], play_parallel[30], play_parallel[29], play_parallel[28], play_parallel[27], play_parallel[26], play_parallel[25], play_parallel[24], play_parallel[23], play_parallel[22], play_parallel[21], play_parallel[20], play_parallel[19], play_parallel[18] (the first 15 of 40 listed).
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT bclkDivCounter[7]_i_2 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
+    bclkDivCounter_reg[4] {FDRE}
+    bclkDivCounter_reg[5] {FDRE}
+    bclkDivCounter_reg[6] {FDRE}
+    bclkDivCounter_reg[7] {FDRE}
     AC_BCLK_reg {FDRE}
-    bclkDivCounter_reg[0] {FDRE}
-    bclkDivCounter_reg[1] {FDRE}
-    bclkDivCounter_reg[2] {FDRE}
-    bclkDivCounter_reg[3] {FDRE}
-
-Related violations: <none>
-
-PLHOLDVIO-2#2 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT frame_sync_OBUF_inst_i_1 is driving clock pin of 24 cells. This could lead to large hold time violations. First few involved cells are:
-    playback_data_reg[0] {FDRE}
-    playback_data_reg[10] {FDRE}
-    playback_data_reg[11] {FDRE}
-    playback_data_reg[12] {FDRE}
-    playback_data_reg[13] {FDRE}
 
 Related violations: <none>
 

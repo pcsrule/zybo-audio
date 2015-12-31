@@ -2,11 +2,10 @@
 *** Running vivado
     with args -log ac_interface.vds -m64 -mode batch -messageDb vivado.pb -notrace -source ac_interface.tcl
 
-WARNING: Default location for XILINX_VIVADO_HLS not found: 
 
-****** Vivado v2015.1 (64-bit)
-  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
-  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 
 source ac_interface.tcl -notrace
@@ -14,42 +13,45 @@ Command: synth_design -top ac_interface -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23946 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1029.719 ; gain = 130.457 ; free physical = 1807 ; free virtual = 9439
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1131.852 ; gain = 197.422 ; free physical = 86 ; free virtual = 18128
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ac_interface' [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:22]
+INFO: [Synth 8-638] synthesizing module 'ac_interface' [/home/nolan/Documents/VivadoProjects/zybo-audio/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:22]
 	Parameter LRCLKDIV bound to: 31 - type: integer 
 	Parameter BCLKDIV bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'receive' [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/receive.sv:23]
-INFO: [Synth 8-256] done synthesizing module 'receive' (1#1) [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/receive.sv:23]
-INFO: [Synth 8-638] synthesizing module 'i2s_tx' [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/i2s_tx.sv:26]
+INFO: [Synth 8-638] synthesizing module 'i2s_rx' [/home/nolan/Documents/VivadoProjects/zybo-audio/ac_interface/ac_interface.srcs/sources_1/new/i2s_rx.v:26]
 	Parameter AUDIO_DW bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'i2s_tx' (2#1) [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/i2s_tx.sv:26]
-WARNING: [Synth 8-689] width (24) of port connection 'left_chan' does not match port width (32) of module 'i2s_tx' [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:125]
-WARNING: [Synth 8-689] width (24) of port connection 'right_chan' does not match port width (32) of module 'i2s_tx' [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:126]
-INFO: [Synth 8-256] done synthesizing module 'ac_interface' (3#1) [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'i2s_rx' (1#1) [/home/nolan/Documents/VivadoProjects/zybo-audio/ac_interface/ac_interface.srcs/sources_1/new/i2s_rx.v:26]
+INFO: [Synth 8-638] synthesizing module 'i2s_tx' [/home/nolan/Documents/VivadoProjects/zybo-audio/ac_interface/ac_interface.srcs/sources_1/new/i2s_tx.v:26]
+	Parameter AUDIO_DW bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'i2s_tx' (2#1) [/home/nolan/Documents/VivadoProjects/zybo-audio/ac_interface/ac_interface.srcs/sources_1/new/i2s_tx.v:26]
+INFO: [Synth 8-256] done synthesizing module 'ac_interface' (3#1) [/home/nolan/Documents/VivadoProjects/zybo-audio/ac_interface/ac_interface.srcs/sources_1/new/ac_interface.sv:22]
 WARNING: [Synth 8-3331] design ac_interface has unconnected port led[3]
 WARNING: [Synth 8-3331] design ac_interface has unconnected port led[2]
 WARNING: [Synth 8-3331] design ac_interface has unconnected port led[1]
+WARNING: [Synth 8-3331] design ac_interface has unconnected port play_parallel[1]
+WARNING: [Synth 8-3331] design ac_interface has unconnected port play_parallel[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1066.008 ; gain = 166.746 ; free physical = 1769 ; free virtual = 9402
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1171.234 ; gain = 236.805 ; free physical = 84 ; free virtual = 18087
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1066.008 ; gain = 166.746 ; free physical = 1769 ; free virtual = 9402
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1171.234 ; gain = 236.805 ; free physical = 88 ; free virtual = 18087
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1074.008 ; gain = 174.746 ; free physical = 1769 ; free virtual = 9402
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1179.234 ; gain = 244.805 ; free physical = 88 ; free virtual = 18087
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'data_out_reg_reg' and it is trimmed from '32' to '31' bits. [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/receive.sv:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'right_reg' and it is trimmed from '32' to '31' bits. [/home/nolan/Documents/VivadoProjects/zybo-audio/ac_interface/ac_interface.srcs/sources_1/new/i2s_rx.v:53]
+INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-5546] ROM "AC_BCLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "AC_LRCLK" won't be mapped to RAM because it is too sparse
-INFO: [Device 21-403] Loading part xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1090.020 ; gain = 190.758 ; free physical = 1754 ; free virtual = 9386
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1195.246 ; gain = 260.816 ; free physical = 93 ; free virtual = 18071
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -63,15 +65,16 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 2     
 +---Registers : 
-	               32 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
 	               31 Bit    Registers := 1     
-	               24 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -82,15 +85,20 @@ Hierarchical RTL Component report
 Module ac_interface 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 2     
 +---Registers : 
+	               32 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
-Module receive 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module i2s_rx 
 Detailed RTL Component Info : 
 +---Registers : 
+	               32 Bit    Registers := 3     
 	               31 Bit    Registers := 1     
-	               24 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 Module i2s_tx 
 Detailed RTL Component Info : 
@@ -110,20 +118,21 @@ BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1170.340 ; gain = 271.078 ; free physical = 1681 ; free virtual = 9313
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1264.574 ; gain = 330.145 ; free physical = 88 ; free virtual = 18009
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'receive/data_out_reg_reg' and it is trimmed from '31' to '30' bits. [/home/nolan/Documents/new_vivado/radspwi/ac_interface/ac_interface.srcs/sources_1/new/receive.sv:42]
 INFO: [Synth 8-5546] ROM "AC_BCLK" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "AC_LRCLK" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design ac_interface has unconnected port led[3]
 WARNING: [Synth 8-3331] design ac_interface has unconnected port led[2]
 WARNING: [Synth 8-3331] design ac_interface has unconnected port led[1]
+WARNING: [Synth 8-3331] design ac_interface has unconnected port play_parallel[1]
+WARNING: [Synth 8-3331] design ac_interface has unconnected port play_parallel[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1178.348 ; gain = 279.086 ; free physical = 1672 ; free virtual = 9304
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1272.574 ; gain = 338.145 ; free physical = 87 ; free virtual = 18003
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1178.348 ; gain = 279.086 ; free physical = 1672 ; free virtual = 9304
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1272.574 ; gain = 338.145 ; free physical = 87 ; free virtual = 18003
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -131,7 +140,41 @@ Report RTL Partitions:
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
 No constraint files found.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i2s_tx/left_reg[24] )
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[31] ' (FDE_1) to '\i2s_tx/left_reg[31] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[30] ' (FDE_1) to '\i2s_tx/left_reg[30] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[29] ' (FDE_1) to '\i2s_tx/left_reg[29] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[28] ' (FDE_1) to '\i2s_tx/left_reg[28] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[27] ' (FDE_1) to '\i2s_tx/left_reg[27] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[26] ' (FDE_1) to '\i2s_tx/left_reg[26] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[25] ' (FDE_1) to '\i2s_tx/left_reg[25] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[24] ' (FDE_1) to '\i2s_tx/left_reg[24] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[23] ' (FDE_1) to '\i2s_tx/left_reg[23] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[22] ' (FDE_1) to '\i2s_tx/left_reg[22] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[21] ' (FDE_1) to '\i2s_tx/left_reg[21] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[20] ' (FDE_1) to '\i2s_tx/left_reg[20] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[19] ' (FDE_1) to '\i2s_tx/left_reg[19] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[18] ' (FDE_1) to '\i2s_tx/left_reg[18] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[17] ' (FDE_1) to '\i2s_tx/left_reg[17] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[16] ' (FDE_1) to '\i2s_tx/left_reg[16] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[15] ' (FDE_1) to '\i2s_tx/left_reg[15] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[14] ' (FDE_1) to '\i2s_tx/left_reg[14] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[13] ' (FDE_1) to '\i2s_tx/left_reg[13] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[12] ' (FDE_1) to '\i2s_tx/left_reg[12] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[11] ' (FDE_1) to '\i2s_tx/left_reg[11] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[10] ' (FDE_1) to '\i2s_tx/left_reg[10] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[9] ' (FDE_1) to '\i2s_tx/left_reg[9] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[8] ' (FDE_1) to '\i2s_tx/left_reg[8] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[7] ' (FDE_1) to '\i2s_tx/left_reg[7] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[6] ' (FDE_1) to '\i2s_tx/left_reg[6] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[5] ' (FDE_1) to '\i2s_tx/left_reg[5] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[4] ' (FDE_1) to '\i2s_tx/left_reg[4] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[3] ' (FDE_1) to '\i2s_tx/left_reg[3] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[2] ' (FDE_1) to '\i2s_tx/left_reg[2] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[1] ' (FDE_1) to '\i2s_tx/left_reg[1] '
+INFO: [Synth 8-3886] merging instance '\i2s_tx/right_reg[0] ' (FDE_1) to '\i2s_tx/left_reg[0] '
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[31] ) is unused and will be removed from module ac_interface.
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[30] ) is unused and will be removed from module ac_interface.
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[29] ) is unused and will be removed from module ac_interface.
@@ -139,13 +182,6 @@ WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[28] ) is unused an
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[27] ) is unused and will be removed from module ac_interface.
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[26] ) is unused and will be removed from module ac_interface.
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[25] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\receive/data_out_reg_reg[29] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\receive/data_out_reg_reg[28] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\receive/data_out_reg_reg[27] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\receive/data_out_reg_reg[26] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\receive/data_out_reg_reg[25] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\receive/data_out_reg_reg[24] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\i2s_tx/left_reg[31] ) is unused and will be removed from module ac_interface.
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[24] ) is unused and will be removed from module ac_interface.
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[23] ) is unused and will be removed from module ac_interface.
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[22] ) is unused and will be removed from module ac_interface.
@@ -171,33 +207,22 @@ WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[3] ) is unused and
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[2] ) is unused and will be removed from module ac_interface.
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[1] ) is unused and will be removed from module ac_interface.
 WARNING: [Synth 8-3332] Sequential element (\i2s_tx/right_reg[0] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\i2s_tx/left_reg[30] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\i2s_tx/left_reg[29] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\i2s_tx/left_reg[28] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\i2s_tx/left_reg[27] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\i2s_tx/left_reg[26] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\i2s_tx/left_reg[25] ) is unused and will be removed from module ac_interface.
-WARNING: [Synth 8-3332] Sequential element (\i2s_tx/left_reg[24] ) is unused and will be removed from module ac_interface.
 ---------------------------------------------------------------------------------
-Start Area Optimization
+Finished Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 85 ; free virtual = 17983
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9285
----------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9285
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 85 ; free virtual = 17983
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9285
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9285
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 85 ; free virtual = 17982
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -209,16 +234,24 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9284
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 85 ; free virtual = 17982
 ---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 85 ; free virtual = 17982
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 85 ; free virtual = 17982
 ---------------------------------------------------------------------------------
 Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -227,7 +260,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9284
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 86 ; free virtual = 17982
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -240,7 +273,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9284
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 86 ; free virtual = 17982
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -252,13 +285,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9284
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 86 ; free virtual = 17982
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9284
+Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9284
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 86 ; free virtual = 17982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 86 ; free virtual = 17982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 86 ; free virtual = 17982
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -274,47 +319,47 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |     8|
+|1     |BUFG   |     2|
+|2     |CARRY4 |    16|
 |3     |LUT1   |    38|
-|4     |LUT2   |     4|
+|4     |LUT2   |    36|
 |5     |LUT3   |     7|
 |6     |LUT4   |    13|
 |7     |LUT5   |     6|
-|8     |LUT6   |    14|
+|8     |LUT6   |    16|
 |9     |MUXF7  |     1|
-|10    |FDRE   |   147|
+|10    |FDRE   |   179|
 |11    |FDSE   |     1|
-|12    |IBUF   |     3|
-|13    |OBUF   |     6|
+|12    |IBUF   |    33|
+|13    |OBUF   |    38|
 |14    |OBUFT  |     3|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+----------+--------+------+
-|      |Instance  |Module  |Cells |
-+------+----------+--------+------+
-|1     |top       |        |   252|
-|2     |  i2s_tx  |i2s_tx  |   120|
-|3     |  receive |receive |    51|
-+------+----------+--------+------+
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   389|
+|2     |  i2s_rx |i2s_rx |   107|
+|3     |  i2s_tx |i2s_tx |   130|
++------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1652 ; free virtual = 9284
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 86 ; free virtual = 17983
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 56 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1194.371 ; gain = 186.648 ; free physical = 1651 ; free virtual = 9284
-Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.371 ; gain = 295.109 ; free physical = 1651 ; free virtual = 9284
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1288.598 ; gain = 213.746 ; free physical = 86 ; free virtual = 17983
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.598 ; gain = 354.168 ; free physical = 86 ; free virtual = 17983
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 3 inverter(s) to 81 load pin(s).
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 65 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-20 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+51 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1314.391 ; gain = 306.668 ; free physical = 1604 ; free virtual = 9219
-report_utilization: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1346.410 ; gain = 0.000 ; free physical = 1602 ; free virtual = 9217
-INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 01:13:13 2015...
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1377.602 ; gain = 371.840 ; free physical = 85 ; free virtual = 17918
+report_utilization: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1409.621 ; gain = 0.000 ; free physical = 87 ; free virtual = 17916
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 30 18:55:50 2015...

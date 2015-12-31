@@ -1,12 +1,12 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-| Date             : Fri Jun  5 01:13:41 2015
-| Host             : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
+| Tool Version     : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date             : Wed Dec 30 18:56:23 2015
+| Host             : nolan-desktop running 64-bit Fedora release 23 (Twenty Three)
 | Command          : 
 | Design           : ac_interface
 | Device           : xc7z010clg400-1
-| Design State     : Routed
+| Design State     : routed
 | Grade            : commercial
 | Process          : typical
 | Characterization : Production
@@ -29,18 +29,18 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+-------+
-| Total On-Chip Power (W)  | 2.334 |
-| Dynamic (W)              | 2.201 |
-| Device Static (W)        | 0.133 |
-| Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 58.1  |
-| Junction Temperature (C) | 51.9  |
-| Confidence Level         | Low   |
-| Setting File             | ---   |
-| Simulation Activity File | ---   |
-| Design Nets Matched      | NA    |
-+--------------------------+-------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 25.955 (Junction temp exceeded!) |
+| Dynamic (W)              | 25.207                           |
+| Device Static (W)        | 0.748                            |
+| Effective TJA (C/W)      | 11.5                             |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 
 
 1.1 On-Chip Components
@@ -49,17 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.194 |      212 |       --- |             --- |
-|   LUT as Logic |     0.155 |       38 |     17600 |            0.22 |
-|   Register     |     0.023 |      148 |     35200 |            0.42 |
-|   CARRY4       |     0.016 |        8 |      4400 |            0.18 |
-|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+| Slice Logic    |     0.305 |      288 |       --- |             --- |
+|   LUT as Logic |     0.217 |       72 |     17600 |            0.41 |
+|   CARRY4       |     0.044 |       16 |      4400 |            0.36 |
+|   Register     |     0.043 |      180 |     35200 |            0.51 |
+|   BUFG         |    <0.001 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |        6 |       --- |             --- |
 |   F7/F8 Muxes  |     0.000 |        1 |     17600 |           <0.01 |
-| Signals        |     0.191 |      186 |       --- |             --- |
-| I/O            |     1.816 |        9 |       100 |            9.00 |
-| Static Power   |     0.133 |          |           |                 |
-| Total          |     2.334 |          |           |                 |
+| Signals        |     0.991 |      259 |       --- |             --- |
+| I/O            |    23.911 |       71 |       100 |           71.00 |
+| Static Power   |     0.748 |          |           |                 |
+| Total          |    25.955 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,20 +69,20 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.406 |       0.397 |      0.009 |
-| Vccaux    |       1.800 |     0.160 |       0.148 |      0.012 |
+| Vccint    |       1.000 |     1.557 |       1.428 |      0.129 |
+| Vccaux    |       1.800 |     1.987 |       1.947 |      0.040 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.856 |       0.855 |      0.001 |
+| Vcco18    |       1.800 |    11.265 |      11.264 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| Vccbram   |       1.000 |     0.011 |       0.000 |      0.011 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.039 |       0.000 |      0.039 |
+| Vccpint   |       1.000 |     0.473 |       0.000 |      0.473 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -143,9 +143,9 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| ac_interface |     2.201 |
-|   i2s_tx     |     0.037 |
-|   receive    |     0.041 |
+| ac_interface |    25.207 |
+|   i2s_rx     |     0.137 |
+|   i2s_tx     |     0.041 |
 +--------------+-----------+
 
 

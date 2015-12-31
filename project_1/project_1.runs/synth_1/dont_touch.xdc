@@ -18,14 +18,14 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_rst_pr
 # IP: bd/design_1/ip/design_1_ac_interface_0_1/design_1_ac_interface_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_ac_interface_0_1 || ORIG_REF_NAME==design_1_ac_interface_0_1}]
 
+# IP: bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_xlconstant_0_0 || ORIG_REF_NAME==design_1_xlconstant_0_0}]
+
 # IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0}]
 
-# IP: bd/design_1/ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_fifo_generator_0_0 || ORIG_REF_NAME==design_1_fifo_generator_0_0}]
-
-# IP: bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_xlconstant_0_0 || ORIG_REF_NAME==design_1_xlconstant_0_0}]
+# IP: bd/design_1/ip/design_1_fifo_generator_1_0/design_1_fifo_generator_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_fifo_generator_1_0 || ORIG_REF_NAME==design_1_fifo_generator_1_0}]
 
 # IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0}]
@@ -43,10 +43,10 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc
 
-# XDC: bd/design_1/ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_fifo_generator_0_0 || ORIG_REF_NAME==design_1_fifo_generator_0_0}] {/U0 }]/U0 ]]
+# XDC: bd/design_1/ip/design_1_fifo_generator_1_0/design_1_fifo_generator_1_0/design_1_fifo_generator_1_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_fifo_generator_1_0 || ORIG_REF_NAME==design_1_fifo_generator_1_0}] {/U0 }]/U0 ]]
 
-# XDC: bd/design_1/ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0_ooc.xdc
+# XDC: bd/design_1/ip/design_1_fifo_generator_1_0/design_1_fifo_generator_1_0_ooc.xdc
 
 # XDC: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc
 

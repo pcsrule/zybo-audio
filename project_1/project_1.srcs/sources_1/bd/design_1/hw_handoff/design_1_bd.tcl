@@ -10,7 +10,7 @@
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2015.1
+set scripts_vivado_version 2015.4
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
@@ -161,17 +161,48 @@ proc create_root_design { parentCell } {
   # Create instance: ac_interface_0, and set properties
   set ac_interface_0 [ create_bd_cell -type ip -vlnv Nolan:user:ac_interface:1.1 ac_interface_0 ]
 
-  # Create instance: fifo_generator_0, and set properties
-  set fifo_generator_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:12.0 fifo_generator_0 ]
-  set_property -dict [ list CONFIG.Data_Count_Width {13} CONFIG.Fifo_Implementation {Common_Clock_Block_RAM} CONFIG.Full_Threshold_Assert_Value {8190} CONFIG.Full_Threshold_Negate_Value {8189} CONFIG.Input_Data_Width {32} CONFIG.Input_Depth {8192} CONFIG.Output_Data_Width {32} CONFIG.Output_Depth {8192} CONFIG.Read_Data_Count_Width {13} CONFIG.Write_Data_Count_Width {13}  ] $fifo_generator_0
+  # Create instance: fifo_generator_1, and set properties
+  set fifo_generator_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.0 fifo_generator_1 ]
+  set_property -dict [ list \
+CONFIG.Data_Count_Width {13} \
+CONFIG.Full_Threshold_Assert_Value {8190} \
+CONFIG.Full_Threshold_Negate_Value {8189} \
+CONFIG.Input_Data_Width {32} \
+CONFIG.Input_Depth {8192} \
+CONFIG.Output_Data_Width {32} \
+CONFIG.Output_Depth {8192} \
+CONFIG.Read_Data_Count_Width {13} \
+CONFIG.Write_Data_Count_Width {13} \
+ ] $fifo_generator_1
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
-  set_property -dict [ list CONFIG.PCW_ENET0_PERIPHERAL_ENABLE {0} CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_CLK2_PORT {1} CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {1} CONFIG.PCW_I2C0_GRP_INT_ENABLE {1} CONFIG.PCW_I2C0_GRP_INT_IO {EMIO} CONFIG.PCW_I2C0_I2C0_IO {EMIO} CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/nolan/Downloads/ZYBO_zynq_def.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_SD0_PERIPHERAL_ENABLE {0} CONFIG.PCW_TTC0_PERIPHERAL_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART0_UART0_IO {<Select>} CONFIG.PCW_UART1_PERIPHERAL_ENABLE {1} CONFIG.PCW_USB0_PERIPHERAL_ENABLE {0} CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_WDT_PERIPHERAL_ENABLE {1}  ] $processing_system7_0
+  set_property -dict [ list \
+CONFIG.PCW_ENET0_PERIPHERAL_ENABLE {0} \
+CONFIG.PCW_EN_CLK0_PORT {1} \
+CONFIG.PCW_EN_CLK2_PORT {1} \
+CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {1} \
+CONFIG.PCW_I2C0_GRP_INT_ENABLE {1} \
+CONFIG.PCW_I2C0_GRP_INT_IO {EMIO} \
+CONFIG.PCW_I2C0_I2C0_IO {EMIO} \
+CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1} \
+CONFIG.PCW_IMPORT_BOARD_PRESET {/home/nolan/Downloads/ZYBO_zynq_def.xml} \
+CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} \
+CONFIG.PCW_SD0_PERIPHERAL_ENABLE {0} \
+CONFIG.PCW_TTC0_PERIPHERAL_ENABLE {1} \
+CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} \
+CONFIG.PCW_UART0_UART0_IO {<Select>} \
+CONFIG.PCW_UART1_PERIPHERAL_ENABLE {1} \
+CONFIG.PCW_USB0_PERIPHERAL_ENABLE {0} \
+CONFIG.PCW_USE_M_AXI_GP0 {1} \
+CONFIG.PCW_WDT_PERIPHERAL_ENABLE {1} \
+ ] $processing_system7_0
 
   # Create instance: processing_system7_0_axi_periph, and set properties
   set processing_system7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 processing_system7_0_axi_periph ]
-  set_property -dict [ list CONFIG.NUM_MI {2}  ] $processing_system7_0_axi_periph
+  set_property -dict [ list \
+CONFIG.NUM_MI {2} \
+ ] $processing_system7_0_axi_periph
 
   # Create instance: rst_processing_system7_0_100M, and set properties
   set rst_processing_system7_0_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_processing_system7_0_100M ]
@@ -191,21 +222,67 @@ proc create_root_design { parentCell } {
   connect_bd_net -net ac_interface_0_AC_MUTEN [get_bd_ports AC_MUTEN] [get_bd_pins ac_interface_0/AC_MUTEN]
   connect_bd_net -net ac_interface_0_AC_PBDAT [get_bd_ports AC_PBDAT] [get_bd_pins ac_interface_0/AC_PBDAT]
   connect_bd_net -net ac_interface_0_AC_RECLRC [get_bd_ports AC_PBLRC] [get_bd_ports AC_RECLRC] [get_bd_pins ac_interface_0/AC_LRCLK]
-  connect_bd_net -net ac_interface_0_frame_sync [get_bd_pins ac_interface_0/frame_sync] [get_bd_pins fifo_generator_0/clk]
+  connect_bd_net -net ac_interface_0_frame_sync [get_bd_pins ac_interface_0/frame_sync] [get_bd_pins fifo_generator_1/clk]
   connect_bd_net -net ac_interface_0_led [get_bd_ports led_tri_o] [get_bd_pins ac_interface_0/led]
-  connect_bd_net -net ac_interface_0_rec_parallel [get_bd_pins ac_interface_0/rec_parallel] [get_bd_pins fifo_generator_0/din]
-  connect_bd_net -net button_1 [get_bd_ports button] [get_bd_pins fifo_generator_0/rst]
-  connect_bd_net -net fifo_generator_0_dout [get_bd_pins ac_interface_0/play_parallel] [get_bd_pins fifo_generator_0/dout]
-  connect_bd_net -net fifo_generator_0_full [get_bd_pins fifo_generator_0/full] [get_bd_pins fifo_generator_0/rd_en]
+  connect_bd_net -net ac_interface_0_rec_parallel [get_bd_pins ac_interface_0/rec_parallel] [get_bd_pins fifo_generator_1/din]
+  connect_bd_net -net button_1 [get_bd_ports button] [get_bd_pins fifo_generator_1/srst]
+  connect_bd_net -net fifo_generator_1_dout [get_bd_pins ac_interface_0/play_parallel] [get_bd_pins fifo_generator_1/dout]
+  connect_bd_net -net fifo_generator_1_full [get_bd_pins fifo_generator_1/full] [get_bd_pins fifo_generator_1/rd_en]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0_axi_periph/ACLK] [get_bd_pins processing_system7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK] [get_bd_pins rst_processing_system7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_CLK2 [get_bd_ports AC_MCLK] [get_bd_pins ac_interface_0/mclk] [get_bd_pins processing_system7_0/FCLK_CLK2]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins ac_interface_0/reset] [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_processing_system7_0_100M/ext_reset_in]
   connect_bd_net -net rst_processing_system7_0_100M_interconnect_aresetn [get_bd_pins processing_system7_0_axi_periph/ARESETN] [get_bd_pins rst_processing_system7_0_100M/interconnect_aresetn]
   connect_bd_net -net rst_processing_system7_0_100M_peripheral_aresetn [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN] [get_bd_pins processing_system7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins fifo_generator_0/wr_en] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins fifo_generator_1/wr_en] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
-  
+
+  # Perform GUI Layout
+  regenerate_bd_layout -layout_string {
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port AC_RECLRC -pg 1 -y 650 -defaultsOSRD
+preplace port DDR -pg 1 -y 270 -defaultsOSRD
+preplace port AC_MCLK -pg 1 -y 330 -defaultsOSRD
+preplace port button -pg 1 -y 590 -defaultsOSRD -right
+preplace port AC_MUTEN -pg 1 -y 690 -defaultsOSRD
+preplace port AC_RECDAT -pg 1 -y 780 -defaultsOSRD -right
+preplace port AC_PBLRC -pg 1 -y 630 -defaultsOSRD
+preplace port IIC_0 -pg 1 -y 310 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 290 -defaultsOSRD
+preplace port AC_BCLK -pg 1 -y 610 -defaultsOSRD
+preplace port AC_PBDAT -pg 1 -y 670 -defaultsOSRD
+preplace portBus led_tri_o -pg 1 -y 730 -defaultsOSRD
+preplace inst ac_interface_0 -pg 1 -lvl 1 -y 670 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 140 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y 830 -defaultsOSRD
+preplace inst fifo_generator_1 -pg 1 -lvl 2 -y 470 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 370 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 2 NJ 270 NJ
+preplace netloc ac_interface_0_rec_parallel 1 1 1 460
+preplace netloc fifo_generator_1_full 1 1 1 490
+preplace netloc ac_interface_0_AC_RECLRC 1 1 2 NJ 640 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 460
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 10 520 440
+preplace netloc processing_system7_0_IIC_0 1 1 2 NJ 310 NJ
+preplace netloc ac_interface_0_led 1 1 2 NJ 730 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 1 490
+preplace netloc xlconstant_0_dout 1 1 1 NJ
+preplace netloc AC_RECDAT_1 1 0 3 30 780 NJ 780 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 2 NJ 290 NJ
+preplace netloc ac_interface_0_AC_PBDAT 1 1 2 NJ 670 NJ
+preplace netloc ac_interface_0_frame_sync 1 1 1 490
+preplace netloc fifo_generator_1_dout 1 0 2 20 530 NJ
+preplace netloc ac_interface_0_AC_BCLK 1 1 2 NJ 610 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 480
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 40 50 440
+preplace netloc button_1 1 1 2 500 620 NJ
+preplace netloc ac_interface_0_AC_MUTEN 1 1 2 NJ 690 NJ
+preplace netloc processing_system7_0_FCLK_CLK2 1 0 3 40 560 450 630 NJ
+levelinfo -pg 1 -10 240 660 840 -top 0 -bot 890
+",
+}
 
   # Restore current instance
   current_bd_instance $oldCurInst

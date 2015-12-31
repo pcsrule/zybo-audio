@@ -1,5 +1,47 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Dec 30 18:58:43 2015
+| Host         : nolan-desktop running 64-bit Fedora release 23 (Twenty Three)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ac_interface_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_ac_interface_0_1 (Nolan:user:ac_interface:1.1 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Dec 30 18:56:42 2015
+| Host         : nolan-desktop running 64-bit Fedora release 23 (Twenty Three)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ac_interface_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ac_interface_0_1 (Nolan:user:ac_interface:1.1) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
 | Date         : Fri Jun  5 05:17:39 2015
 | Host         : nolan-laptop running 64-bit Fedora release 21 (Twenty One)
