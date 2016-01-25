@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Nolan Reker
 // 
 // Create Date: 05/14/2015 01:50:55 AM
 // Design Name: 

@@ -21,6 +21,10 @@
  * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * WORK, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Modifications: Thjis module has been simplified and adapted for use on the ZyBo
+ * development board by Nolan Reker to allow simple access to digital audio samples
+ * for DSP applications in the FPGA fabric.
  */
 
 module i2s_rx #(
